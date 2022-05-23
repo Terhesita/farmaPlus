@@ -1,0 +1,967 @@
+<html>
+  <body>
+    <div class="container-fluid">
+      <!--header-->
+      <div class="row info">
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+          <i class='bx bxs-location-plus'> &nbsp;Nuestras Sucursales |&nbsp; </i>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+          <i class='bx bx-mail-send'>&nbsp;Email: farmaplus@farma.mx |&nbsp;</i>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+          <i class='bx bx-phone' >&nbsp;Atención a Clientes +(52) 2358961&nbsp;</i>
+        </div>
+      </div>
+      <!--Banner-->
+      <div class="row banner">
+        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-3">
+          <img src="assets/img/LogoFarmaPlus-C.png" class="logo">
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+          <form>
+            <input type="search" placeholder="Buscar">
+          </form>
+        </div>
+        <div class=" col-xs-4 col-sm-4 col-md-4 col-lg-3">
+          <!--------Bienvenidos---------->
+          <p class="datos-usuario col-xs-12 col-sm-12 col-md-12 col-lg-12">Bienvenido {{nombre}}</p>
+          <!-------Conn cuenta--------->
+          <div class="icono-usuario col-xs-12 col-sm-12 col-md-12 col-lg-12" *ngIf="cuentaIniciada">
+            <ul class="navbar_user">
+              <!--Usuario-->
+              <li class="checkout">
+                <a href="/Mi-Cuenta" *ngIf="cuenta == false">
+                  <i class='bx bxs-user'></i>
+                </a>
+              </li>
+              <!--favoritos-->
+              <li class="checkout">
+                <a href="#" [routerLink]='["Favoritos"]'>
+                  <i class='bx bxs-heart'></i>
+                  <span id="checkout_items" class="checkout_items">x</span>
+                </a>
+              </li>
+              <!--Carrito-->
+              <li class="checkout">
+                <a href="#" [routerLink]='["Compra"]'>
+                  <i class='bx bxs-cart' ></i>
+                  <span id="checkout_items" class="checkout_items">x</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!--------Sin cuenta--------->
+          <div class="icono-usuario col-xs-12 col-sm-12 col-md-12 col-lg-12" *ngIf="sinCuenta">
+            <!--Usuario-->
+            <ul class="navbar_user">
+              <li class="checkout">
+                <a href="#" [routerLink]='["Sesion"]'>
+                  <i class='bx bxs-user'></i>
+                </a>
+              </li>
+              <!--favoritos-->
+              <li class="checkout">
+                <a href="#" [routerLink]='["Favoritos"]'>
+                  <i class='bx bxs-heart'></i>
+                  <span id="checkout_items" class="checkout_items">x</span>
+                </a>
+              </li>
+              <!--Carrito-->
+              <li class="checkout">
+                <a href="#" [routerLink]='["Compra"]'>
+                  <i class='bx bxs-cart' ></i>
+                  <span id="checkout_items" class="checkout_items">x</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!--Menu-->
+      <div class="container-fluid px-0">
+        <nav class="navbar navbar-expand-md navbar-light bg-white p-0"> 
+          <button class="navbar-toggler mr-3" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> 
+            <span class="navbar-toggler-icon"></span> 
+          </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item"> 
+                    <a class="nav-link" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><a href="" routerLink="/Medicamentos">Medicamentos</a>
+                      <i class='bx bxs-chevron-down'></i>
+                    </a>
+                    <div class="dropdown-menu" id="dropdown-menu1" aria-labelledby="navbarDropdown1">
+                      <div class="container">
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="row d-flex tab">
+                              <div class="d-flex flex-column"> 
+                                <a class="dropdown-item" href="#" routerLink="/Alergias">
+                                  <h6 class="mb-0">Alergía</h6> 
+                                </a> 
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="row d-flex tab">
+                              <div class="d-flex flex-column"> 
+                                <a class="dropdown-item" href="#" routerLink="/Antibiotico">
+                                  <h6 class="mb-0">Antibiótico</h6> 
+                                </a> 
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="row d-flex tab">
+                              <div class="d-flex flex-column"> 
+                                <a class="dropdown-item" href="#" routerLink="/Antimicotico">
+                                  <h6 class="mb-0">Antimicótico</h6> 
+                                </a> 
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="row d-flex tab">
+                              <div class="d-flex flex-column"> 
+                                <a class="dropdown-item" href="#" routerLink="/Antivirales">
+                                  <h6 class="mb-0">Antivirales</h6> 
+                                </a> 
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="row d-flex tab">
+                              <div class="d-flex flex-column"> 
+                                <a class="dropdown-item" href="#" routerLink="/Parasitos">
+                                  <h6 class="mb-0">Contra Parásitos</h6> 
+                                </a> 
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="row d-flex tab">
+                              <div class="d-flex flex-column"> 
+                                <a class="dropdown-item" href="#" routerLink="/Dental">
+                                  <h6 class="mb-0">Dental</h6> 
+                                </a> 
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="row d-flex tab">
+                              <div class="d-flex flex-column"> 
+                                <a class="dropdown-item" href="#" routerLink="/Inflamacion">
+                                  <h6 class="mb-0">Dolor e inflamación</h6> 
+                                </a> 
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="row d-flex tab">
+                              <div class="d-flex flex-column"> 
+                                <a class="dropdown-item" href="#" routerLink="/Estomacal">
+                                  <h6 class="mb-0">Estomacal</h6> 
+                                </a> 
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="row d-flex tab">
+                              <div class="d-flex flex-column"> 
+                                <a class="dropdown-item" href="#"  routerLink="/Relajante">
+                                  <h6 class="mb-0">Relajantes</h6> 
+                                </a> 
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="row d-flex tab">
+                              <div class="d-flex flex-column"> 
+                                <a class="dropdown-item" href="#" routerLink="/Vigilancia">
+                                  <h6 class="mb-0">Vigilancia médica</h6> 
+                                </a> 
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-12">
+                            <div class="row d-flex tab">
+                              <div class="d-flex flex-column"> 
+                                <a class="dropdown-item" href="#" routerLink="/Respiratorio">
+                                  <h6 class="mb-0">Respiratorias</h6> 
+                                </a> 
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="nav-item"> 
+                    <a class="nav-link" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><a href="" routerLink="/Aparatos">Aparatos</a> 
+                      <i class='bx bxs-chevron-down'></i>
+                    </a>
+                    <div class="dropdown-menu" id="dropdown-menu2" aria-labelledby="navbarDropdown2">
+                      <div class="container">
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="row d-flex tab">
+                              <div class="d-flex flex-column"> 
+                                <a class="dropdown-item" href="#" routerLink="/Glucosa">
+                                  <h6 class="mb-0">Glucosa</h6> 
+                                </a> 
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="row d-flex tab">
+                              <div class="d-flex flex-column"> 
+                                <a class="dropdown-item" href="#" routerLink="/Presion">
+                                  <h6 class="mb-0">Presión</h6> 
+                                </a> 
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="row d-flex tab">
+                              <div class="d-flex flex-column"> 
+                                <a class="dropdown-item" href="#" routerLink="/Aparato-Respiratorio">
+                                  <h6 class="mb-0">Respiratorio</h6> 
+                                </a> 
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="row d-flex tab">
+                              <div class="d-flex flex-column"> 
+                                <a class="dropdown-item" href="#" routerLink="/Temperatura">
+                                  <h6 class="mb-0">Temperatura</h6> 
+                                </a> 
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><a href="" routerLink="/Bebes">Bebés</a> 
+                    </a>
+                  </li>
+                  <li class="nav-item"> 
+                    <a class="nav-link" href="#" id="navbarDropdown10" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><a routerLink="/Cuidado-personal">Cuidado personal</a>
+                      <i class='bx bxs-chevron-down'></i>
+                    </a>
+                    <div class="dropdown-menu" id="dropdown-menu10" aria-labelledby="navbarDropdown10">
+                      <div class="container">
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="row d-flex tab">
+                              <div class="d-flex flex-column"> 
+                                <a class="dropdown-item" href="#" routerLink="/Cosmeticos">
+                                  <h6 class="mb-0">Cosméticos</h6> 
+                                </a> 
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="row d-flex tab">
+                              <div class="d-flex flex-column"> 
+                                <a class="dropdown-item" href="#" routerLink="/Cuidado-Piel">
+                                  <h6 class="mb-0">Cuidado de piel</h6> 
+                                </a> 
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="row d-flex tab">
+                              <div class="d-flex flex-column"> 
+                                <a class="dropdown-item" href="#" routerLink="/Higiene-Intima">
+                                  <h6 class="mb-0">Higiene íntima</h6> 
+                                </a> 
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="row d-flex tab">
+                              <div class="d-flex flex-column"> 
+                                <a class="dropdown-item" href="#" routerLink="/Jabones">
+                                  <h6 class="mb-0">Jabones</h6> 
+                                </a> 
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="row d-flex tab">
+                              <div class="d-flex flex-column"> 
+                                <a class="dropdown-item" href="#" routerLink="/Panuelos">
+                                  <h6 class="mb-0">Pañuelos</h6> 
+                                </a> 
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="row d-flex tab">
+                              <div class="d-flex flex-column"> 
+                                <a class="dropdown-item" href="#" routerLink="/Repelente">
+                                  <h6 class="mb-0">Repelente</h6> 
+                                </a> 
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-12">
+                            <div class="row d-flex tab">
+                              <div class="d-flex flex-column"> 
+                                <a class="dropdown-item" href="#" routerLink="/Otros">
+                                  <h6 class="mb-0">Otros</h6> 
+                                </a> 
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" id="navbarDropdown4" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><a routerLink="/Curacion">Curación</a>
+                      <i class='bx bxs-chevron-down'></i>
+                    </a>
+                    <div class="dropdown-menu" id="dropdown-menu4" aria-labelledby="navbarDropdown4">
+                      <div class="container">
+                        <div class="row">
+                          <div class="col-lg-12">
+                            <div class="row d-flex tab">
+                              <div class="d-flex flex-column"> 
+                                <a class="dropdown-item" href="#" routerLink="/Alcohol">
+                                  <h6 class="mb-0">Alcohol, agua oxigenada y antisepticos</h6> 
+                                </a> 
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-12">
+                            <div class="row d-flex tab">
+                              <div class="d-flex flex-column"> 
+                                <a class="dropdown-item" href="#" routerLink="/Algodon">
+                                  <h6 class="mb-0">Algodón</h6> 
+                                </a> 
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" id="navbarDropdown5" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" routerLink="/Instrumental">Instrumental
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" id="navbarDropdown6" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" routerLink="/Salud-sexual">Salud sexual
+                    </a>
+                  </li>
+                  <li  class="nav-item">
+                    <a class="nav-link" href="#" id="navbarDropdown7" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" routerLink="/Vitaminas">Vitaminas
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" id="navbarDropdown8" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" routerLink="/Otros-productos">Otros
+                    </a>
+                  </li>
+                </ul>
+            </div>
+        </nav>
+      </div>
+
+      <!--Carrusel-->
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://medicallhome.mx/wp-content/themes/Sitio2020MH/images/Banner-3-MH.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://medicallhome.mx/wp-content/themes/Sitio2020MH/images/Banner-1-MH.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://medicallhome.mx/wp-content/themes/Sitio2020MH/images/Banner-2-MH.png" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <!-- 4botones -->
+      <div class="benefit">
+        <div class="container">
+          <div class="row benefit_row">
+            <div class="col-lg-3 benefit_col">
+              <div class="benefit_item d-flex flex-row align-items-center">
+                <div class="benefit_icon"><i class='bx bxs-truck'></i></div>
+                <div class="benefit_content">
+                  <h6>free shipping</h6>
+                  <p>Suffered Alteration in Some Form</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 benefit_col">
+              <div class="benefit_item d-flex flex-row align-items-center">
+                <div class="benefit_icon"><i class='bx bx-money' ></i></div>
+                <div class="benefit_content">
+                  <h6>cach on delivery</h6>
+                  <p>The Internet Tend To Repeat</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 benefit_col">
+              <div class="benefit_item d-flex flex-row align-items-center">
+                <div class="benefit_icon"><i class='bx bx-undo' ></i></div>
+                <div class="benefit_content">
+                  <h6>45 days return</h6>
+                  <p>Making it Look Like Readable</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 benefit_col">
+              <div class="benefit_item d-flex flex-row align-items-center">
+                <div class="benefit_icon"><i class='bx bx-time' ></i></div>
+                <div class="benefit_content">
+                  <h6>opening all week</h6>
+                  <p>8AM - 09PM</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--2 tarjetas-->
+      <div class="row mt-4">
+        <div class="card col-xs-12 col-sm-12 col-md-6 col-lg-6" >
+          <div class="card-body">
+            <br>
+            <br>
+            <h1>ENCUENTRAS TUS <br>MEDICAMENTOS AQUÍ</h1>
+            <!-- <a href="#" class="ov-btn-slide-left">SURTIR</a>-->
+            <a href="#" class="boton-slide-circular" [routerLink]='["Receta"]'>
+              <span class="slide-icono">
+                <i class='bx bx-shopping-bag'></i>
+              </span>
+              <span class="slide-texto">
+                Surtir
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="card col-xs-12 col-sm-12 col-md-6 col-lg-6">
+          <div class="card-body2">
+            <br>
+            <br>
+            <h1>GRAN VARIEDAD EN <br>NUESTROS PRODUCTOS</h1>
+            <!--<a href="#" class="ov-btn-slide-left">VER AHORA</a>-->
+            <a href="#" class="boton-slide-circular">
+              <span class="slide-icono">
+                <i class='bx bx-show' ></i>
+              </span>
+              <span class="slide-texto">
+                Ver Ahora
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carrusel de productos-->
+      <div class="row">
+        <div class="bbb_viewed">
+          <div class="container">
+              <div class="row">
+                  <div class="col">
+                      <div class="bbb_main_container">
+                          <div class="bbb_viewed_title_container">
+                              <h3 class="bbb_viewed_title">Lo más vendido</h3>
+                              <div class="bbb_viewed_nav_container">
+                                  <div class="bbb_viewed_nav bbb_viewed_prev"><i class='bx bx-chevron-left'></i></div>
+                                  <div class="bbb_viewed_nav bbb_viewed_next"><i class='bx bx-chevron-right' ></i></div>
+                              </div>
+                          </div>
+                          <div class="bbb_viewed_slider_container" >
+                              <div class="owl-carousel owl-theme bbb_viewed_slider" >
+                                <div class="bbb_viewed_item discount d-flex flex-column align-items-center justify-content-center text-center">
+                                  <div class="bbb_viewed_image"><img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1560924153/alcatel-smartphones-einsteiger-mittelklasse-neu-3m.jpg" alt=""></div>
+                                  <div class="bbb_viewed_content text-center">
+                                      <div class="bbb_viewed_price">₹12225<span>₹13300</span></div>
+                                      <div class="bbb_viewed_name"><a href="#">Alkatel Phone</a></div>
+                                  </div>
+                                  <ul class="item_marks">
+                                      <li class="item_mark item_discount">-25%</li>
+                                      <li class="item_mark item_new">new</li>
+                                  </ul>
+                              </div>
+                                  <!--<div class="owl-item" *ngFor="let datos of vendidos">
+                                      <div class="bbb_viewed_item d-flex flex-column align-items-center justify-content-center text-center">
+                                          <div class="bbb_viewed_image"><img src="{{datos.Url_imagen}}" alt=""></div>
+                                          <div class="bbb_viewed_content text-center">
+                                              <div class="bbb_viewed_price">{{datos.PrecioV}}</div>
+                                              <div class="bbb_viewed_name"><a href="#">{{datos.Nombre}}</a></div>
+                                          </div>
+                                          <ul class="item_marks">
+                                              <li class="item_mark item_discount">-25%</li>
+                                              <li class="item_mark item_new">new</li>
+                                          </ul>
+                                      </div>
+                                  </div>-->
+                                  <div class="owl-item">
+                                    <div class="bbb_viewed_item d-flex flex-column align-items-center justify-content-center text-center">
+                                        <div class="bbb_viewed_image"><img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1560924221/51_be7qfhil.jpg" alt=""></div>
+                                        <div class="bbb_viewed_content text-center">
+                                            <div class="bbb_viewed_price">₹30079</div>
+                                            <div class="bbb_viewed_name"><a href="#">Samsung LED</a></div>
+                                        </div>
+                                        <ul class="item_marks">
+                                            <li class="item_mark item_discount">-25%</li>
+                                            <li class="item_mark item_new">new</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+
+      
+
+      <!--Carta 100% ancho-->
+      <div class="row">
+        <div class="card col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <a href="">
+            <div class=" card-body3"></div>
+          </a>
+        </div>
+      </div>
+
+      <!--Categorias-->
+      <div class="cards-list row">
+        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3">
+          <div class="categoria 1 ">
+            <div class="card_image" >
+              <div class="prueba-img"></div>
+              <img src="assets/img/medicamentos.png" />
+              </div>
+            <div class="card_title">
+              <p>MEDICAMENTOS</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3">
+          <div class="categoria 2 ">
+            <div class="card_image">
+              <img src="assets/img/categoria2.png" />
+              </div>
+            <div class="card_title">
+              <p>SALUD Y BELLEZA</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3">
+          <div class="categoria 3 ">
+            <div class="card_image">
+              <img src="assets/img/categoria4.png" />
+            </div>
+            <div class="card_title">
+              <p>BEBÉS</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3">
+          <div class="categoria 4 ">
+            <div class="card_image">
+              <img src="assets/img/categoria3.png" />
+              </div>
+            <div class="card_title">
+              <p>SALUD SEXUAL</p>
+            </div>
+            </div>
+        </div>
+        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3">
+          <div class="categoria 5 ">
+            <div class="card_image"> 
+              <img src="assets/img/categoria5.png" /> </div>
+            <div class="card_title">
+              <p>VITAMINAS</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3">
+          <div class="categoria 6 ">
+            <div class="card_image">
+              <img src="assets/img/categoria6.png" />
+              </div>
+            <div class="card_title">
+              <p>ALIMENTOS</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3">
+          <div class="categoria 7">
+            <div class="card_image">
+              <img src="assets/img/categoria8.png" />
+            </div>
+            <div class="card_title">
+              <p>DERMOCOSMÉTICOS</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3">
+          <div class="categoria 8 ">
+            <div class="card_image">
+              <img src="assets/img/categoria7.png" />
+              </div>
+            <div class="card_title">
+              <p>BOTIQUÍN</p>
+            </div>
+            </div>
+        </div>
+      </div>
+
+      <!--Productos-->
+      <div class="row">
+        <section class="featured">
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-12">
+                      <div class="featured__controls">
+                          <ul>
+                              <li class="active" data-filter="*">Medicamentos</li>
+                              <li data-filter=".oranges">Bebés</li>
+                              <li data-filter=".fresh-meat">Cuidado Personal</li>
+                              <li data-filter=".vegetables">Alimentos</li>
+                              <li data-filter=".fastfood">Botiquín</li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+              <div class="row featured__filter">
+                  <!--Inicio Producto 1-->
+                  <div class="col-lg-3 col-md-4 col-sm-6 mix oranges fresh-meat">
+                      <div class="featured__item">
+                          <div class="featured__item__pic " >
+                                  <img src="https://farmaplusmx.com/ImgFarmaPlus/7501836003294.png">
+                                  <ul class="featured__item__pic__hover">
+                                      <li><a href="#"><i class='bx bxs-heart'></i></a></li>
+                                      <li><a href="#"><i class='bx bxs-cart-alt'></i></a></li>
+                                  </ul>
+                          </div>
+                          <div class="featured__item__text">
+                              <h5><a href="#">Alliviax</a></h5>
+                              <h6>500mg 100 tabletas</h6>
+                              <h5>$30.00</h5>
+                          </div>
+                      </div>
+                  </div>
+                  <!--Inicio Producto 2-->
+                  <div class="col-lg-3 col-md-4 col-sm-6 mix vegetables fastfood">
+                      <div class="featured__item">
+                          <div class="featured__item__pic " >
+                                  <img src="https://farmaplusmx.com/ImgFarmaPlus/7501125116810.png">
+                                  <ul class="featured__item__pic__hover">
+                                      <li><a href="#"><i class='bx bxs-heart'></i></a></li>
+                                      <li><a href="#"><i class='bx bxs-cart-alt'></i></a></li>
+                                  </ul>
+                          </div>
+                          <div class="featured__item__text">
+                              <h5><a href="#">Alliviax</a></h5>
+                              <h6>500mg 100 tabletas</h6>
+                              <h5>$30.00</h5>
+                          </div>
+                      </div>
+                  </div>
+                  <!--Inicio Producto 3-->
+                  <div class="col-lg-3 col-md-4 col-sm-6 mix vegetables fresh-meat">
+                      <div class="featured__item">
+                          <div class="featured__item__pic " >
+                                  <img src="https://farmaplusmx.com/ImgFarmaPlus/7501088505157.png">
+                                  <ul class="featured__item__pic__hover">
+                                      <li><a href="#"><i class='bx bxs-heart'></i></a></li>
+                                      <li><a href="#"><i class='bx bxs-cart-alt'></i></a></li>
+                                  </ul>
+                          </div>
+                          <div class="featured__item__text">
+                              <h5><a href="#">Alliviax</a></h5>
+                              <h6>500mg 100 tabletas</h6>
+                              <h5>$30.00</h5>
+                          </div>
+                      </div>
+                  </div>
+                  <!--Inicio Producto 4-->
+                  <div class="col-lg-3 col-md-4 col-sm-6 mix fastfood oranges">
+                      <div class="featured__item">
+                          <div class="featured__item__pic " >
+                                  <img src="https://farmaplusmx.com/ImgFarmaPlus/7501008443033.png">
+                                  <ul class="featured__item__pic__hover">
+                                      <li><a href="#"><i class='bx bxs-heart'></i></a></li>
+                                      <li><a href="#"><i class='bx bxs-cart-alt'></i></a></li>
+                                  </ul>
+                          </div>
+                          <div class="featured__item__text">
+                              <h5><a href="#">Alliviax</a></h5>
+                              <h6>500mg 100 tabletas</h6>
+                              <h5>$30.00</h5>
+                          </div>
+                      </div>
+                  </div>
+                  <!--Inicio Producto 5-->
+                  <div class="col-lg-3 col-md-4 col-sm-6 mix fresh-meat vegetables">
+                      <div class="featured__item">
+                          <div class="featured__item__pic " >
+                                  <img src="https://farmaplusmx.com/ImgFarmaPlus/780083141585.png" id="prod5">
+                                  <ul class="featured__item__pic__hover">
+                                      <li><a href="#"><i class='bx bxs-heart'></i></a></li>
+                                      <li><a href="#"><i class='bx bxs-cart-alt'></i></a></li>
+                                  </ul>
+                          </div>
+                          <div class="featured__item__text">
+                              <h5><a href="#">Alliviax</a></h5>
+                              <h6>500mg 100 tabletas</h6>
+                              <h5>$30.00</h5>
+                          </div>
+                      </div>
+                  </div>
+                  <!--Inicio Producto 6 -->
+                  <div class="col-lg-3 col-md-4 col-sm-6 mix oranges fastfood">
+                      <div class="featured__item">
+                          <div class="featured__item__pic " >
+                                  <img src="https://farmaplusmx.com/ImgFarmaPlus/780083141226.png">
+                                  <ul class="featured__item__pic__hover">
+                                      <li><a href="#"><i class='bx bxs-heart'></i></a></li>
+                                      <li><a href="#"><i class='bx bxs-cart-alt'></i></a></li>
+                                  </ul>
+                          </div>
+                          <div class="featured__item__text">
+                              <h5><a href="#">Alliviax</a></h5>
+                              <h6>500mg 100 tabletas</h6>
+                              <h5>$30.00</h5>
+                          </div>
+                      </div>
+                  </div>
+                  <!--Inicio Producto 7 -->
+                  <div class="col-lg-3 col-md-4 col-sm-6 mix fresh-meat vegetables">
+                      <div class="featured__item">
+                          <div class="featured__item__pic " >
+                                  <img src="https://farmaplusmx.com/ImgFarmaPlus/650240053610.png">
+                                  <ul class="featured__item__pic__hover">
+                                      <li><a href="#"><i class='bx bxs-heart'></i></a></li>
+                                      <li><a href="#"><i class='bx bxs-cart-alt'></i></a></li>
+                                  </ul>
+                          </div>
+                          <div class="featured__item__text">
+                              <h5><a href="#">Alliviax</a></h5>
+                              <h6>500mg 100 tabletas</h6>
+                              <h5>$30.00</h5>
+                          </div>
+                      </div>
+                  </div>
+                  <!--Inicio Porudcto 8 -->
+                  <div class="col-lg-3 col-md-4 col-sm-6 mix fastfood vegetables">
+                      <div class="featured__item">
+                          <div class="featured__item__pic " >
+                                  <img src="https://farmaplusmx.com/ImgFarmaPlus/650240013805.png">
+                                  <ul class="featured__item__pic__hover">
+                                      <li><a href="#"><i class='bx bxs-heart'></i></a></li>
+                                      <li><a href="#"><i class='bx bxs-cart-alt'></i></a></li>
+                                  </ul>
+                          </div>
+                          <div class="featured__item__text">
+                              <h5><a href="#">Alliviax</a></h5>
+                              <h6>500mg 100 tabletas</h6>
+                              <h5>$30.00</h5>
+                          </div>
+                      </div>
+                  </div>
+  
+              </div>
+          </div>
+        </section>
+      </div>
+
+      <!--Segunda trajeta 100% ancho-->
+      <div class="row">
+        <div class="card col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <a href="">
+            <div class="card-body4"></div>
+          </a>
+        </div>
+      </div>
+
+      <!-----Boton hacia arriba y chat---->
+      <div class="contenedor-botones">
+        <button id="btnScrolltoTop"><i class='bx bx-up-arrow-alt'></i></button>
+        <!--<button id="btnChat"><i class='bx bx-message-detail'></i></button>-->
+      </div>
+
+      <!--Mapa sucursales-->
+      <div class="row sucursales">
+        <div class="ubicaciones col-xs-12 col-sm-12 col-md-6 col-lg-6">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d28798.972222875167!2d-103.32405759999999!3d25.542656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2smx!4v1633628321972!5m2!1ses!2smx">
+            </iframe>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+          <table class="containerTabla">
+            <thead>
+              <!--Categorias-->
+              <tr>
+                <th><h1><i class='bx bxs-store'></i> Sucursal</h1></th>
+                <th><h1><i class='bx bxs-location-plus'></i>Dirección</h1></th>
+                <th><h1><i class='bx bx-phone' ></i>Teléfono</h1></th>
+                <!--<th><h1>Average</h1></th>-->
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Torreón</td>
+                <td>9518</td>
+                <td>63696985236</td>
+                <!--<td>01:32:50</td>-->
+              </tr>
+              <tr>
+                <td>Goméz</td>
+                <td>7326</td>
+                <td>10431254723</td>
+                <!--<td>00:51:22</td>-->
+              </tr>
+              <tr>
+                <td>Guadalajara</td>
+                <td>4162</td>
+                <td>5327785496</td>
+                <!--<td>00:24:34</td>-->
+              </tr>
+              <tr>
+                <td>Zacatecas</td>
+                <td>3654</td>
+                <td>29617854854</td>
+                <!--<td>00:12:10</td>-->
+              </tr>
+              <tr>
+                <td>Monterrey</td>
+                <td>2002</td>
+                <td>4135784517</td>
+                <!--<td>00:46:19</td>-->
+              </tr>
+              <tr>
+                <td>Veracruz</td>
+                <td>4623</td>
+                <td>3486127845</td>
+                <!--<td>00:31:52</td>-->
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!--Footer-->
+      <div class="row">
+        <footer>
+          <div class="footer-todo">
+            <div class="cuerpo-footer">
+              <div class="primer-columna">
+                <div class="row">
+                <img src="assets/img/LogoFarmaPlus-C.png" alt="" class="logo-footer">
+                </div>
+                <div class="redes"><i class='bx bxl-facebook'></i>
+                  <label>Farma Plus</label>
+                </div>
+                <div class="redes">
+                  <i class='bx bx-mail-send'></i>
+                  <label>farmaplus.mx@fama</label>
+                </div>
+                <div class="redes">
+                  <i class='bx bxl-instagram' ></i>
+                  <label>@farmaplus</label>
+                </div>
+                <div class="redes">
+                  <i class='bx bxl-whatsapp' ></i>
+                  <label >+(52)78547854</label>
+                </div>
+                <div class="redes">
+                  <img src="assets/img/payment-item.png" class="pago">
+                </div>
+              </div>
+              <div class="segu-columna">
+                  <h1>Atención a Clientes</h1>
+                  <div class="atencion">
+                    <a href="#">Contáctanos</a>
+                  </div>
+                  <div class="atencion">
+                    <a id="btnSucursal">Localizador de Farmacia</a>
+                    <!--<button id="btnScrolltoTop"><i class='bx bx-up-arrow-alt'></i></button>-->
+                  </div>
+                  <div class="atencion">
+                    <a href="#" [routerLink]='["Facturacion"]'>Facturación</a>
+                  </div>
+              </div>
+              <div class="tercer-columna">
+                <h1>Políticas</h1>
+                <div class="politicas">
+                  <a href="#" [routerLink]='["Politicas-privacidad"]'>Aviso de Privacidad</a>
+                </div>
+                <div class="politicas">
+                    <a href="#" [routerLink]='["preguntas"]'>Preguntas Frecuentes</a>
+                </div>
+                <div class="politicas">
+                    <a href="#" [routerLink]='["Terminos"]'>Términos y condiciones</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="contenedor-footer">
+            <div class="footer">
+              <div class="copyright">
+                ©<a href="#"> Farma Plus | </a> Todos los derechos reservados 2021
+              </div>
+              <div class="information-footer">
+                <a href="#">Atención a Clientes </a>|
+                <a href="#">Privacidad y Politica </a>| 
+                <a href="#">Terminos y condiciones </a>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <!--<div class = "fb-customerchat" 
+        page_id = "<101256062439740>"> 
+    </div>-->
+  </body>
+</html> 
+
+<router-outlet></router-outlet>

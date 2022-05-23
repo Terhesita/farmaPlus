@@ -1,0 +1,49 @@
+
+<div class="container justify-content-center">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <button type="button" class="cerrar" onclick="visibilidad('#informacion', false)">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+    </div>
+    <div class="row">
+        <div>
+            <div class="table-wrap">
+                <table class="table table-responsive table-borderless">
+                    <thead>
+                        <th>&nbsp;</th>
+                        <th>Producto</th>
+                        <th>&nbsp;</th>
+                        <th>Precio</th>
+                    </thead>
+                    <tbody>
+                        <tr class="align-middle alert border-bottom" role="alert" *ngFor="let datos of info_pedidos ">
+                            <td class="text-center">
+                                <img class="pic"
+                                    src="{{datos.Url_imagen}}"
+                                    alt="">
+                            </td>
+                            <td>
+                                <div>
+                                    <p class="m-0 fw-bold">{{datos. Nombre}}</p>
+                                    <p class="m-0 text-muted">{{datos.Descripcion}}</p>
+                                </div>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                                <div class="fw-600">${{datos.PrecioV}}</div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <button class="comprar">Volver a comprar</button>
+        </div>
+    </div>
+</div>

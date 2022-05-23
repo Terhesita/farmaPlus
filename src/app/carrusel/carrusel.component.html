@@ -1,0 +1,148 @@
+<div
+  id="multi-item-example"
+  class="carousel slide carousel-multi-item"
+  data-ride="carousel"
+>
+  <div class="controls-top text-center">
+    <a class="btn-floating" href="#multi-item-example" data-slide="prev"
+      ><i class="fa fa-chevron-circle-left fa-2x r"></i
+    ></a>
+    <a class="btn-floating" href="#multi-item-example" data-slide="next"
+      ><i class="fa fa-chevron-circle-right fa-2x r"></i
+    ></a>
+  </div>
+  <ol class="carousel-indicators">
+    <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
+    <li data-target="#multi-item-example" data-slide-to="1"></li>
+  </ol>
+  <div class="carousel-inner" role="listbox">
+    <div class="carousel-item active">
+      <div class="col-md-3" style="float: left;">
+        <div class="badge-promo">
+          <button type="button" class="btn">30%</button>
+        </div>
+        <div class="our-team">
+          <div class="picture">
+            <img
+              class="img-fluid"
+              src=""
+            />
+          </div>
+          <div class="team-content">
+            <h3 class="name">Nombre producto</h3>
+            <h4 class="title">Precio</h4>
+            <h4 class="title" style="text-decoration: line-through;">Precio</h4>
+          </div>
+          <ul class="social">
+            <li>
+              <a href="#" class="fa fa-cart-arrow-down" aria-hidden="true"></a>
+            </li>
+            <li><a href="#" class="fa fa-info" aria-hidden="true"></a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-md-3" style="float: left;">
+        <div class="badge-promo">
+          <button type="button" class="btn">30%</button>
+        </div>
+        <div class="our-team">
+          <div class="picture">
+            <img
+              class="img-fluid"
+              src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
+            />
+          </div>
+          <div class="team-content">
+            <h3 class="name">Nombre producto</h3>
+            <h4 class="title">Precio</h4>
+            <h4 class="title" style="text-decoration: line-through;">Precio</h4>
+          </div>
+          <ul class="social">
+            <li>
+              <a href="#" class="fa fa-cart-arrow-down" aria-hidden="true"></a>
+            </li>
+            <li><a href="#" class="fa fa-info" aria-hidden="true"></a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-md-3" style="float: left;">
+        <div class="badge-promo">
+          <button type="button" class="btn">30%</button>
+        </div>
+        <div class="our-team">
+          <div class="picture">
+            <img
+              class="img-fluid"
+              src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
+            />
+          </div>
+          <div class="team-content">
+            <h3 class="name">Nombre producto</h3>
+            <h4 class="title">Precio</h4>
+            <h4 class="title" style="text-decoration: line-through;">Precio</h4>
+          </div>
+          <ul class="social">
+            <li>
+              <a href="#" class="fa fa-cart-arrow-down" aria-hidden="true"></a>
+            </li>
+            <li><a href="#" class="fa fa-info" aria-hidden="true"></a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-md-3" style="float: left;">
+        <div class="badge-promo">
+          <button type="button" class="btn">30%</button>
+        </div>
+        <div class="our-team">
+          <div class="picture">
+            <img
+              class="img-fluid"
+              src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
+            />
+          </div>
+          <div class="team-content">
+            <h3 class="name">Nombre producto</h3>
+            <h4 class="title">Precio</h4>
+            <h4 class="title" style="text-decoration: line-through;">Precio</h4>
+          </div>
+          <ul class="social">
+            <li>
+              <a href="#" class="fa fa-cart-arrow-down" aria-hidden="true"></a>
+            </li>
+            <li><a href="#" class="fa fa-info" aria-hidden="true"></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <div class="col-md-3" style="float: left;" *ngFor="let datos of vendidos">
+        <div class="badge-promo">
+          <button type="button" class="btn">30%</button>
+        </div>
+        <div class="our-team">
+          <div class="picture">
+            <img
+              class="img-fluid"
+              src="{{datos.Url_imagen}}"
+            />
+          </div>
+          <div class="team-content">
+            <h3 class="name">Nombre producto</h3>
+            <h4 class="title">{{datos.Nombre}}</h4>
+            <h4 class="title" style="text-decoration: line-through;">{{datos.PrecioV}}</h4>
+          </div>
+          <ul class="social">
+            <li>
+              <a href="#" class="fa fa-cart-arrow-down" aria-hidden="true"></a>
+            </li>
+            <li><a href="#" class="fa fa-info" aria-hidden="true"></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

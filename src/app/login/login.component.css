@@ -1,0 +1,79 @@
+body {
+    /*background-color: rgb(93, 28, 139)*/
+  }
+  
+  input {
+    border: none;
+    outline: none
+  }
+  
+  .container {
+    border-radius: 15px;
+    /*background: rgb(184, 9, 9);*/
+  }
+  
+  .cuerpo{
+    background: rgb(214, 13, 13);
+  }
+  
+  .logo{
+      /*background: #5685;*/
+      height: 80px;
+      
+  }
+
+  .logo img{
+      height: 50px;
+      width: 170px;
+  }
+
+  .registrar{
+      background: rgb(32, 115, 194);
+  }
+
+  .registrar:hover{
+    background: rgba(32, 116, 194, 0.541);
+  }
+
+  @media(min-width:992px) {
+    img {
+        width: 500px;
+        height: 500px
+    }
+  
+  
+    .container {
+        background-image: linear-gradient(to bottom, rgb(255, 255, 255) 80%, rgb(242, 242, 253), rgb(164, 164, 235))
+    }
+  }
+  
+  @media(max-width:991px) {
+    img {
+        display: none
+    }
+  
+  
+    .container {
+        background-image: linear-gradient(to bottom, rgb(255, 255, 255) 80%, rgb(242, 242, 253), rgb(164, 164, 235))
+    }
+  }
+  
+  @media(max-width:768px) {
+    img {
+        display: none
+    }
+  
+  }
+  
+  @media(max-width:567px) {
+    img {
+        display: none
+    }
+  
+    .container {
+        margin-left: 0px;
+        margin-top: 30px
+    }
+  
+  }
+

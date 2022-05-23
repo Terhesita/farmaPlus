@@ -1,0 +1,172 @@
+<html>
+    <body>
+        <!----------Menu---------------->
+        <header>
+            <div class="menu">
+                <!--logo-->
+                <a href="#" [routerLink]='[""]'><img src="assets/img/LogoFarmaPlus-C.png" alt="" class="logoFarma"></a>
+                <!--Menu-->
+                <nav  class="menu-category">
+                    <ul><!--1-->
+                    <li>
+                        <a href="#">Medicamentos</a>
+                        <ul><!--2-->
+                        <li><a href="#">Alergia</a> </li>
+                        <li><a href="#">Antibiótico</a> </li>
+                        <li><a href="#">Antimicótico</a> </li>
+                        <li><a href="#">Antivirales</a> </li>
+                        <li><a href="#">Contra parásitos</a> </li>
+                        <li><a href="#">Dental</a> </li>
+                        <li><a href="#">Dolor e inflamación</a> </li>
+                        <li><a href="#">Estomacal</a> </li>
+                        <li><a href="#">Relajantes</a> </li>
+                        <li><a href="#">Respiratorio</a> </li>
+                        <li><a href="#">Vigilancia médica</a> </li>
+                        <li><a href="#">Repelente</a> </li>
+                        </ul><!--Fin del 2-->
+                    </li>
+                    <li>
+                        <a href="#">Aparatos</a>
+                        <ul><!--2-->
+                        <li>
+                            <a href="#">Glucosa<i class='bx bx-chevron-right'></i></a>
+                            <ul><!--3-->
+                            <li><a href="#">Jabón</a></li>
+                            <li><a href="#">Toallas Higienicas</a></li>
+                            <li><a href="#">Tampones</a></li>
+                            </ul><!--Fin 3-->
+                        </li>
+                        <li><a href="#">Presión</a> </li>
+                        <li><a href="#">Respiratorio</a> </li>
+                        <li><a href="#">Temperatura</a> </li>
+                        </ul><!--Fin del 2-->
+                    </li>
+                    <li><a href="#" [routerLink]='["Bebes"]'>Bebés</a></li>
+                    <li>
+                        <a href="#">Cuidado personal</a>
+                        <ul><!--2-->
+                            <li><a href="#">Cosméticos</a></li>
+                            <li><a href="#">Cuidado de la piel</a> </li>
+                            <li><a href="#">Higiene íntima</a> </li>
+                            <li><a href="#">Jabones</a> </li>
+                            <li><a href="#">Pañuelos</a> </li>
+                            <li><a href="#">Repelente</a> </li>
+                            <li><a href="#">Otros</a> </li>
+                        </ul><!--Fin del 2-->
+                    </li>
+                    <li>
+                        <a href="#">Curación</a>
+                        <ul><!--2-->
+                            <li><a href="#">Alcohol, agua oxigenada y antisepticos</a></li>
+                            <li><a href="#">Algodón</a> </li>
+                        </ul><!--Fin del 2-->
+                    </li>
+                    <li><a href="#">Instrumental</a></li>
+                    <li><a href="#">Salud sexual</a></li>
+                    <li><a href="#">Vitaminas</a></li>
+                    <li><a href="#">Otros</a></li>
+                    </ul><!--Fin del 1-->
+                </nav>
+                <!--Usuario-->
+                <ul class="navbar_user">
+                    <li class="checkout">
+                    <a href="#">
+                        <i class='bx bxs-user'></i>
+                        
+                    </a>
+                    </li>
+                    <!--favoritos-->
+                    <li class="checkout">
+                    <a href="#">
+                        <i class='bx bxs-heart'></i>
+                        <span id="checkout_items" class="checkout_items">0</span>
+                    </a>
+                    </li>
+                    <!--Usuario-->
+                    <li class="checkout">
+                    <a href="#">
+                        <i class='bx bxs-cart' ></i>
+                        <span id="checkout_items" class="checkout_items">0</span>
+                    </a>
+                    </li>
+                
+                </ul>
+            </div>
+        </header>
+        <!------------------------------>
+        <div class="container-card ">
+            <div class="row text-white my-5 py-5">
+                <div class="col-md-6">
+                    <p class="h1 font-weight-bold">FACTURA</p>
+                </div>
+                <div class="col-lg-5 col-md-6 pt-md-0 pt-3">
+                    <h5 class="pb-md-0 pb-3">Genera aquí tu <b>Factura</b> de una manera rápida y sencilla,<br>
+                                            con la seguridad necesaria para ti.<br> </h5>
+                    <img class="img_factura" src="https://www.gasmart.mx/wp-content/uploads/2017/12/Factura_01-400x400.png">
+                </div>
+            </div>
+        </div>
+        <!---------------------------------->
+        <div class="container">
+            <div class="card">
+                <div class="form">
+                    <div class="left-side">
+                        <div class="sign-up s_form">
+                            <div class="main active">
+                                <div class="heading">
+                                    <h2>Generar Factura</h2>
+                                </div>
+                                <div class="input-text"> 
+                                    <input type="text" placeholder="RFC" id="user-name" require> 
+                                </div>
+                                <div class="input-text"> 
+                                    <select>
+                                        <option style="display:none">Tipo de Persona</option>
+                                        <option>Persona Fisíca</option>
+                                        <option>Persona Moral</option>
+                                    </select> 
+                                </div>
+                                <div class="input-text"> 
+                                    <input type="text" placeholder="Nombre, Denominación o Razón Social">
+                                </div>
+                                <div class="input-text"> 
+                                    <input type="text" placeholder="Folio de Compra">
+                                </div>
+                                <div class="input-text"> 
+                                    <select>
+                                        <option style="display:none">Uso de CFDI</option>
+                                        <option>G01 Adquisición de mercancías</option>
+                                        <option>G02 Devoluciones, descuentos o bonificaciones</option>
+                                        <option>G03 Gastos en general</option>
+                                        <option>l01 Construcciones</option>
+                                        <option>l02 Mobilario y equipo de oficina por inversiones</option>
+                                        <option>l03 Equipo de transporte</option>
+                                        <option>l04 Equipo de computo y accesorios</option>
+                                        <option>l05 Dados, troqueles, moldes, matrices y herramental</option>
+                                        <option>l06 Comunicaciones telefónicas</option>
+                                        <option>l07 Comunicaciones satelitales</option>
+                                        <option>l08 Otra maquinaria y equipo</option>
+                                        <option>D01 Honorarios médicos, dentales y gastos hospitalarios</option>
+                                        <option>D02 Gastos médicos por incapacidad o discapacidad</option>
+                                        <option>D03 Gastos funerales</option>
+                                        <option>D04 Donativos</option>
+                                        <option>D06 Aportaciones voluntarias al SAR</option>
+                                        <option>D07 Primas por seguros de gastos médicos</option>
+                                        <option>D08 Gastos de transportación escolar obligatoria</option>
+                                        <option>D09 Depósitos en cuentas para el ahorro, primas que tengan como base planes de pensiones</option>
+                                        <option>D10 Pagos por servicios educativos (colegiaturas)</option>
+                                        <option>P01 Por definir</option>
+                                    </select> 
+                                </div>
+                                <div class="buttons first"> <button class="sign_up_here">Listo</button> <button class="sign_in_here">Cancelar</button> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-side">
+                        <div class="cover_image"> <img src="assets/img/factura/factura_card.jpg"> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

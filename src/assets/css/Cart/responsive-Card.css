@@ -1,0 +1,939 @@
+/* =====================================
+Template Name: Eshop
+Author Name: Naimur Rahman
+Author URI: http://www.wpthemesgrid.com/
+Description: Eshop - eCommerce HTML5 Template.
+Version:1.0
+========================================*/
+/* Tablet Screen */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+.section{
+	padding:50px 0px;
+}
+
+.section-title {
+	margin-bottom: 50px;
+	padding: 0px 109px;
+}
+.section-title h2 {
+	font-size: 26px;
+	margin-bottom: 20px;
+}
+.section-title p {
+	font-size: 13px;
+}
+.shop-services.section {
+	padding: 45px 0 0px 0;
+}
+.breadcrumbs-Cart {
+	padding: 20px 0;
+}
+.blog-single.grid .pagination{
+	float:none;
+	text-align:center;
+}
+
+.header .shopping .shopping-item {
+	top: 62px;
+}
+.header .shopping .dropdown-cart-header a {
+	font-size: 12px;
+}
+.header .shopping .dropdown-cart-header span {
+	font-size: 12px;
+}
+.header .shopping-list h4 a {
+	font-weight: 500;
+	font-size: 13px;
+}
+.header .shopping-item .total span {
+	font-size: 12px;
+	font-weight: 500;
+}
+.header .shopping-item .total .total-amount {
+	font-size: 13px;
+	font-weight: 500;
+}
+.header .shopping-item .bottom .btn {
+	padding: 8px 20px;
+}
+
+.cown-down {
+	height: auto;
+}
+.cown-down .padding-left {
+	padding: 0;
+}
+.cown-down .padding-right {
+	padding: 0;
+}
+.cown-down .content {
+	padding: 50px 110px;
+}
+.cown-down .content .heading-block{
+	padding: 0;
+	position: relative;
+}
+.shop-blog .shop-single-blog {
+	margin-bottom: 30px;
+}
+.shop-services{
+	padding:50px 0;
+}
+.shop-services .single-service {
+	padding: 12px 0 12px 65px;
+}
+.shop-newsletter .newsletter-inner input {
+	width: 380px;
+}
+.shop-blog.grid .shop-single-blog {
+	margin-top:0px;
+}
+.main-sidebar .side-tags .tag {
+	margin-top: 30px;
+}
+.shopping-cart .table td {
+	padding: 20px;
+}
+.shopping-cart .qty .button .btn {
+	width: 38px;
+}
+.shopping-cart .table .qty{
+	padding:0;
+}
+.shopping-cart .total-amount .left .coupon form .btn {
+	display: inline-block;
+	height: 48px;
+	margin-left: 0px;
+	width: 220px;
+	margin-top: 10px;
+	display:block;
+}
+.contact-us .form-main {
+	padding: 30px;
+}
+.contact-us .form .button .btn {
+	height: auto;
+	padding: 15px 22px;
+}
+#myMap {
+	height: 300px;
+	width: 100%;
+}
+.contact-us .single-head {
+	padding: 30px;
+	margin-top: 30px;
+}
+.about-us .about-content {
+	padding: 0;
+	margin-bottom: 30px;
+}
+.error-page .error-inner h2 {
+	font-size: 100px;
+}
+.footer .copyright .left {
+	float:none;
+	text-align:center;
+}
+.footer .copyright .right {
+	float:none;
+	text-align:center;
+	margin-top:10px;
+}
+.footer .single-footer {
+	padding:20px 0;
+}
+
+
+
+
+
+}
+/* Mobile Screen */
+@media only screen and (max-width: 767px) {
+.breadcrumbs-Cart {
+	padding: 90px 0 90px;
+}
+.breadcrumbs-Cart h2 {
+	font-size: 28px;
+}
+
+.shop-services.section {
+	padding: 40px 0 0 0;
+}
+.blog-single.grid .pagination{
+	float:none;
+	text-align:center;
+	margin-top: 12px;
+}
+.site-header .header-bottom {
+	width: 100%;
+	z-index: 333;
+	position: absolute;
+	position: relative;
+	padding-bottom: 20px;
+	background: #333;
+}
+.slicknav_menu{
+	display:block;
+}
+.slicknav_menu {
+	display: block;
+	background: transparent;
+	padding: 0;
+}
+.slicknav_btn {
+	background: transparent;
+	padding: 0;
+	margin: 6px 0 0;
+}
+.slicknav_menu .slicknav_icon-bar{
+	box-shadow:none;
+}
+.skill-image{
+	display:none;
+}
+.slicknav_nav {
+	clear: both;
+	color: #fff;
+	margin: 0;
+	background: transparent;
+	padding-top: 15px;
+}
+.slicknav_nav li a{
+	margin: 0;
+	color: #333;
+	background: transparent;
+	overflow: hidden;
+}
+.slicknav_nav li a i{
+	display:none;
+}
+.slicknav_nav li:hover a{
+	color:#F7941D;
+	background:transparent;
+}
+.slicknav_nav li:hover{
+	background:transparent;
+}
+.slicknav_nav li .dropdown li:hover{
+	background:transparent;
+}
+.slicknav_nav li .dropdown li a{
+	color:#555;
+	background:transparent;
+}
+.slicknav_nav li .dropdown li a:hover{
+	color:#F7941D;
+	background:transparent;
+}
+.slicknav_nav li .slicknav_item{
+	background:transparent;
+}
+.slicknav_nav .slicknav_row, .slicknav_nav a {
+	padding: 0;
+	margin: 0;
+	padding: 6px 0;
+	font-weight: 500;
+}
+.slicknav_nav li:last-child a{
+	padding-bottom:0px;
+}
+.slicknav_menu .slicknav_icon-bar {
+	background-color: #F7941D;
+	box-shadow: none;
+	text-shadow: none;
+}
+.slicknav_nav .slicknav_arrow{
+	color:#F7941D;
+}
+.slicknav_menu .slicknav_icon-bar {
+	display: block;
+	width: 25px;
+	height: 3px;
+	-webkit-border-radius: 1px;
+	-moz-border-radius: 1px;
+	border-radius: 1px;
+	-webkit-box-shadow: 0 1px 0 rgba(0,0,0,.25);
+	-moz-box-shadow: 0 1px 0 rgba(0,0,0,.25);
+	box-shadow: 0 1px 0 rgba(0,0,0,.25);
+}
+.slicknav_nav li .slicknav_item:hover{
+	background:transparent;;
+}
+.slicknav_nav li .new {
+	display:none !important;
+}
+
+.header .middle-inner{
+	width:100%;
+}
+.header.sticky .middle-inner{
+	position:fixed;
+	top:0;
+	left:0;
+	background:#fff;
+	animation: fadeInDown 1s both 0.2s;
+	-webkit-box-shadow:0px 0px 10px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow:0px 0px 10px rgba(0, 0, 0, 0.3);
+	box-shadow:0px 0px 10px rgba(0, 0, 0, 0.3);
+	z-index:999;
+}
+/* Header Search */
+.section{
+	padding:50px 0px;
+}
+.section-title {
+	margin-bottom: 30px;
+	padding: 0px 20px;
+}
+.section-title h2 {
+	font-size: 22px;
+	margin-bottom: 20px;
+}
+.section-title p {
+	font-size: 13px;
+}
+.breadcrumbs-Cart {
+	padding: 20px 0;
+}
+
+.header .header-inner{
+	display:none 
+}
+
+
+
+.cown-down {
+	height: auto;
+}
+.cown-down .content .title {
+	font-size: 22px;
+}
+.cown-down .padding-left {
+	padding: 0;
+}
+.cown-down .padding-right {
+	padding: 0;
+}
+.cown-down .content {
+	padding: 30px 20px;
+}
+.cown-down .content .price {
+	margin-top: 22px;
+	font-size: 28px;
+}
+.cown-down .content .price s {
+	font-size: 20px;
+}
+.cown-down .content .heading-block{
+	padding: 0;
+	position: relative;
+}
+.shop-blog .shop-single-blog {
+	margin-bottom: 30px;
+}
+.shop-services{
+	padding:50px 0;
+}
+.shop-services .single-service {
+	padding: 42px 0 18px 0;
+	text-align: center;
+}
+.shop-services .single-service i {
+	height: 40px;
+	width: 40px;
+	line-height: 40px;
+	font-size: 24px;
+	top: 0;
+	left: 50%;
+	margin-left:-20px;
+}
+.shop-services.home {
+	padding: 25px 0;
+}
+.shop-newsletter .newsletter-inner input {
+	width: 330px;
+	height: 42px;
+	padding:0 20px;
+	border-radius: 30px;
+	margin-bottom: 10px;
+	display:block;
+	text-align:center;
+}
+.shop-newsletter .newsletter-inner .btn {
+	height: 42px;
+	padding: 10px 15px;
+	width: 330px;
+	border-radius: 30px;
+	left:0;
+	display:block;
+}
+.shop-blog .shop-single-blog .content {
+	padding: 28px;
+}
+.shop-blog.grid .shop-single-blog{
+	margin-top:0px;
+}
+.blog-single .blog-title {
+	font-size: 22px;
+	margin: 25px 0 15px 0;
+}
+.blog-single blockquote {
+	padding: 20px 30px 20px 65px;
+}
+.main-sidebar {
+	padding: 25px;
+}
+.main-sidebar .side-tags .tag {
+	margin-top: 30px;
+}
+.blog-single .comments .single-comment.left {
+	margin-left: 0;
+}
+.blog-single .reply form {
+	padding: 0;
+	border:none;
+}
+.blog-single .reply .form-group {
+	margin-bottom: 15px;
+}
+.blog-single .reply .form-group input {
+	height: 42px;
+}
+.blog-single .reply .form-group textarea {
+	height: 120px;
+}
+.blog-single .reply .button .btn {
+	height: 45px;
+	border: none;
+	padding: 0px 20px;
+}
+.cart-information .single-info h4 {
+	font-size: 14px;
+}
+.shopping-summery thead {
+	display: none;
+}
+.shopping-cart .table td {
+	padding: .75rem;
+	vertical-align: top;
+	border-top: 1px solid #e9ecef;
+	display: block;
+	height: auto;
+	text-align: left !important;
+	padding-left: calc(50% + 20px) !important;
+	width: 100%;
+	position: relative;
+	padding-left: 91px;
+	margin-top: 5px;
+}
+.shopping-cart .qty .button .btn {
+	padding: 0;
+	width: 35px;
+}
+.shopping-cart .table td::before {
+	content: attr(data-title);
+	display: block;
+	font-weight: bold;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	padding: 10px 20px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 50%;
+	height: 100%;
+	border-bottom: 1px solid #e6ebee;
+	background: #F7941D;
+	color: #fff;
+	border: none;
+}
+.shopping-cart .table td {
+	vertical-align: middle;
+	padding: 10px;
+	border-bottom: 1px solid #eee;
+}
+.shopping-summery thead tr th {
+	padding: 10px;
+}
+.shopping-cart .total-amount .right {
+	padding-left: 0px;
+}
+.shopping-cart .total-amount .left {
+	margin-bottom: 30px;
+}
+.shopping-cart .total-amount {
+	margin-top: 30px;
+}
+.shopping-cart .total-amount .left .coupon form .btn {
+	display: inline-block;
+	height: 48px;
+	margin-left: 0px;
+	width: 220px;
+	margin-top: 10px;
+	display:block;
+}
+.shop.login {
+	padding:50px 0;
+}
+.shop.login .login-form h2 {
+	font-size: 30px;
+	margin-bottom: 10px;
+	padding-bottom: 15px;
+}
+.pagination .pagination-list li a {
+	padding: 4px 12px;
+}
+.pagination .pagination-list li a {
+	padding: 4px 12px;
+}
+.shop-list .pagination{
+	float:none;
+	text-align:center;
+}
+.shop-list .list-content {
+	margin-top: 30px;
+}
+.shop-list .list-content .btn {
+	height: auto;
+	line-height: auto;
+	padding: 12px 32px;
+}
+
+.error-page .error-inner h2 {
+	font-size: 55px;
+}
+.error-page .error-inner h5 {
+	font-size: 16px;
+	font-weight: 500;
+}
+.error-page .error-inner p {
+	line-height: 20px;
+	font-size: 14px;
+	padding: 0 20px;
+}
+.error-page .button .btn {
+	padding: 8px 20px;
+}
+.contact-us .form-main {
+	padding: 30px;
+}
+.contact-us .form .button .btn {
+	height: auto;
+	padding: 14px 20px;
+}
+.contact-us .form .form-group input {
+	height: 45px;
+}
+.contact-us .title h3 {
+	font-size: 23px;
+}
+#myMap {
+	height: 300px;
+	width: 100%;
+}
+.contact-us .single-head {
+	padding: 30px;
+	margin-top: 30px;
+}
+.contact-us .form .form-group input {
+	height: 40px;
+}
+.about-us .about-content {
+	padding: 0;
+	margin-bottom: 30px;
+}
+.about-us .about-content h3 {
+	font-size: 25px;
+	margin-bottom: 12px;
+	padding-bottom: 12px;
+}
+.about-us .about-content p {
+	line-height: 22px;
+	margin-bottom: 10px;
+	font-size: 14px;
+	font-weight: 300;
+	color:#333;
+}
+.about-us .about-content .button {
+	margin-top: 30px;
+}
+.about-us .about-content .button .btn {
+	margin-right: 10px;
+	padding: 10px 22px;
+	font-size: 13px;
+}
+.footer .footer-top{
+	padding: 15px 0px;
+}
+.footer .copyright .left {
+	float:none;
+	text-align:center;
+}
+.footer .copyright .right {
+	float:none;
+	text-align:center;
+	margin-top:10px;
+}
+.footer .single-footer {
+	padding:20px 0;
+}
+
+}
+/* Mobile Screen */
+@media only screen and (max-width: 450px) {
+.site-header.sticky .header-bottom{
+	position:absolute;
+	z-index:999;
+	top:initial;
+	left:0;
+	bottom:initial;
+}
+.site-header .header-bottom {
+	width: 100%;
+	z-index: 333;
+	position: absolute;
+	position: relative;
+	padding-bottom: 20px;
+	background: #333;
+}
+.slicknav_menu{
+	display:block;
+}
+.slicknav_menu {
+	display: block;
+	background: transparent;
+	padding: 0;
+}
+.slicknav_btn {
+	background: transparent;
+	padding: 0;
+	margin: 6px 0 0;
+}
+.slicknav_menu .slicknav_icon-bar{
+	box-shadow:none;
+}
+.skill-image{
+	display:none;
+}
+.slicknav_nav {
+	clear: both;
+	color: #fff;
+	margin: 0;
+	background: transparent;
+	padding-top: 15px;
+}
+.slicknav_nav li a{
+	margin: 0;
+	color: #333;
+	background: transparent;
+	overflow: hidden;
+}
+.slicknav_nav li a i{
+	display:none;
+}
+.slicknav_nav li:hover a{
+	color:#F7941D;
+	background:transparent;
+}
+.slicknav_nav li:hover{
+	background:transparent;
+}
+.slicknav_nav li .dropdown li:hover{
+	background:transparent;
+}
+.slicknav_nav li .dropdown li a{
+	color:#555;
+	background:transparent;
+}
+.slicknav_nav li .dropdown li a:hover{
+	color:#F7941D;
+	background:transparent;
+}
+.slicknav_nav li .slicknav_item{
+	background:transparent;
+}
+.slicknav_nav .slicknav_row, .slicknav_nav a {
+	padding: 0;
+	margin: 0;
+	padding: 6px 0;
+	font-weight: 500;
+}
+.slicknav_nav li:last-child a{
+	padding-bottom:0px;
+}
+.slicknav_menu .slicknav_icon-bar {
+	background-color: #F7941D;
+	box-shadow: none;
+	text-shadow: none;
+}
+.slicknav_nav .slicknav_arrow{
+	color:#F7941D;
+}
+.slicknav_menu .slicknav_icon-bar {
+	display: block;
+	width: 25px;
+	height: 3px;
+	-webkit-border-radius: 1px;
+	-moz-border-radius: 1px;
+	border-radius: 1px;
+	-webkit-box-shadow: 0 1px 0 rgba(0,0,0,.25);
+	-moz-box-shadow: 0 1px 0 rgba(0,0,0,.25);
+	box-shadow: 0 1px 0 rgba(0,0,0,.25);
+}
+.slicknav_nav li .slicknav_item:hover{
+	background:transparent;;
+}
+
+.section{
+	padding:50px 0px;
+}
+.section-title {
+	margin-bottom: 30px;
+	padding: 0px 20px;
+}
+.section-title h2 {
+	font-size: 22px;
+	margin-bottom: 20px;
+}
+.section-title p {
+	font-size: 13px;
+}
+.breadcrumbs-Cart {
+	padding: 20px 0;
+}
+
+.header.shop.v3 .topbar .inner-content {
+	border:none;
+	padding: 0;
+}
+
+.cown-down {
+	height: auto;
+}
+.cown-down .content .title {
+	font-size: 20px;
+}
+.cown-down .padding-left {
+	padding: 0;
+}
+.cown-down .padding-right {
+	padding: 0;
+}
+.cown-down .content {
+	padding: 30px 20px;
+}
+.cown-down .content .price {
+	margin-top: 22px;
+	font-size: 25px;
+}
+.cown-down .content .price s {
+	font-size: 20px;
+}
+.cown-down .content .heading-block{
+	padding: 0;
+	position: relative;
+}
+.shop-blog .shop-single-blog {
+	margin-bottom: 30px;
+}
+.shop-services{
+	padding:50px 0;
+}
+.shop-services .single-service {
+	padding: 42px 0 18px 0;
+	text-align: center;
+}
+.shop-services .single-service i {
+	height: 40px;
+	width: 40px;
+	line-height: 40px;
+	font-size: 24px;
+	top: 0;
+	left: 50%;
+	margin-left:-20px;
+}
+.shop-services.home {
+	padding: 25px 0;
+}
+.shop-newsletter .newsletter-inner input {
+	width: 100%;
+	height: 42px;
+	padding: 0 12px 0 15px;
+	border-radius: 30px;
+	margin-bottom: 10px;
+	display:block;
+	text-align:center;
+}
+.shop-newsletter .newsletter-inner .btn {
+	height: 42px;
+	padding: 10px 15px;
+	width: 100%;
+	border-radius: 30px;
+	left:0;
+	display:block;
+}
+.shop-blog .shop-single-blog .content {
+	padding: 28px;
+}
+.shop-blog.grid .shop-single-blog {
+	margin-top:0px;
+}
+.shop.checkout .checkout-form h2 {
+	font-size: 20px;
+	font-weight:600;
+}
+.shop.checkout .checkout-form p {
+	font-size: 14px;
+	font-weight: 400;
+	margin-top: 5px;
+	margin-bottom: 25px;
+}
+.shop.login .login-form h2 {
+	font-size: 24px;
+	margin-bottom: 8px;
+	padding-bottom: 12px;
+}
+.shop.login .login-form p {
+	font-size: 13px;
+	margin-bottom: 30px;
+	line-height: 18px;
+}
+.shop.login .form .btn {
+	width: 100%;
+	text-align: center;
+	margin-bottom: 10px;
+}
+.shop.login .login-form .lost-pass {
+	margin-left: 0;
+}
+
+
+.blog-single .blog-title {
+	font-size: 20px;
+	margin: 20px 0 10px 0;
+}
+.blog-single blockquote {
+	padding: 15px 15px 15px 60px;
+}
+.blog-single blockquote i {
+	font-size: 25px;
+}
+.main-sidebar {
+	padding: 25px;
+}
+.main-sidebar .side-tags .tag {
+	margin-top: 30px;
+}
+.blog-single .comments .single-comment.left {
+	margin-left: 0;
+}
+.blog-single .reply form {
+	padding: 0;
+	border:none;
+}
+.blog-single .reply .form-group {
+	margin-bottom: 15px;
+}
+.blog-single .reply .form-group input {
+	height: 42px;
+}
+.blog-single .reply .form-group textarea {
+	height: 120px;
+}
+.blog-single .reply .button .btn {
+	height: 45px;
+	border: none;
+	padding: 0px 20px;
+	width: 100%;
+}
+.pagination .pagination-list li a {
+	padding: 4px 12px;
+}
+.blog-single.grid .pagination{
+	float:none;
+	text-align:center;
+	margin-top: 12px;
+}
+.error-page .error-inner h2 {
+	font-size: 55px;
+}
+.error-page .error-inner h5 {
+	font-size: 16px;
+	font-weight: 500;
+}
+.error-page .error-inner p {
+	line-height: 20px;
+	font-size: 14px;
+	padding: 0 20px;
+}
+.error-page .button .btn {
+	padding: 8px 20px;
+}
+.contact-us .title h4 {
+	font-size: 15px;
+}
+.contact-us .title h3 {
+	font-size: 18px;
+}
+.contact-us .form-main {
+	padding:0px;
+	border:none;
+	box-shadow:none;
+}
+.contact-us .single-head {
+	padding:0px;
+	border:none;
+	box-shadow:none;
+	margin-top: 40px;
+}
+.contact-us .single-info {
+	text-align: center;
+}
+.contact-us .single-info i {
+	display: inline-block;
+}
+.contact-us .single-info .title {
+	font-size: 16px;
+}
+.contact-us .form .form-group textarea {
+	height: 150px;
+}
+.contact-us .form .button .btn {
+	width: 100%;
+}
+.mail-success .mail-inner h2 {
+	font-size: 22px;
+}
+.mail-success .mail-inner p {
+	line-height: 21px;
+	font-size: 13px;
+}
+.mail-success .mail-inner .btn {
+	padding: 8px 28px;
+}
+.footer .footer-top{
+	padding: 12px 0px;
+}
+.footer .links ul li {
+	margin-bottom: 5px;
+}
+.footer .single-footer h4 {
+	margin-bottom: 12px;
+}
+.footer .copyright .left {
+	float:none;
+	text-align:center;
+}
+.footer .copyright .right {
+	float:none;
+	text-align:center;
+	margin-top:10px;
+}
+.footer .single-footer {
+	padding:12px 0;
+}
+
+}

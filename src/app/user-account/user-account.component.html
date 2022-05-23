@@ -1,0 +1,643 @@
+<body>
+    <div class="wrapper">
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <a href="" routerLink=""><img src="assets/img/LogoFarmaPlus-C.png" alt=""></a>
+                <hr>
+            </div>
+            <ul class="list-unstyled components">
+                <li>
+                    <a href="/Pedidos"  class=" button-menu text-center">Mis compras</a> 
+                </li>
+                <li> 
+                    <button data-toggle="collapse"  class=" button-menu" (click)="factura()">Facturación</button>
+                </li>
+                <li> 
+                    <button data-toggle="collapse"  class=" button-menu" (click)="newcontrasena()">Cambiar Contraseña</button>
+                </li>
+            </ul>
+            <ul class="list-unstyled CTAs">
+                <li>
+                    <button class="download" (click)="limpiarCache()">Cerrar Sesión</button> 
+                </li>
+            </ul>
+        </nav>
+        <div class="content">
+            <nav class="navbar navbar-expand-lg navbar-light"> 
+                <button type="button" id="sidebarCollapse" class="btn btn-menul"> 
+                    <i class='bx bx-menu'></i> 
+                </button> 
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> 
+                    <span class="navbar-toggler-icon"></span> 
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Medicamentos
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Alergía</a></li>
+                                <li><a class="dropdown-item" href="#">Antibiótico</a></li>
+                                <li><a class="dropdown-item" href="#">Antimicótico</a></li>
+                                <li><a class="dropdown-item" href="#">Antivirales</a></li>
+                                <li><a class="dropdown-item" href="#">Contra parásitos</a></li>
+                                <li><a class="dropdown-item" href="#">Dental</a></li>
+                                <li><a class="dropdown-item" href="#">Dolor e inflamación</a></li>
+                                <li><a class="dropdown-item" href="#">Estomacal</a></li>
+                                <li><a class="dropdown-item" href="#">Relajantes</a></li>
+                                <li><a class="dropdown-item" href="#">Respiratorio</a></li>
+                                <li><a class="dropdown-item" href="#">Vigilancia médica</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Aparatos
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Glucosa</a></li>
+                                <li><a class="dropdown-item" href="#">Presión</a></li>
+                                <li><a class="dropdown-item" href="#">Respiratorio</a></li>
+                                <li><a class="dropdown-item" href="#">Temperatura</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"> <a class="nav-link" href="#">Bebés</a> </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Cuidado personal
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Cosméticos</a></li>
+                                <li><a class="dropdown-item" href="#">Cuidado de la piel</a></li>
+                                <li><a class="dropdown-item" href="#">Higiene íntima</a></li>
+                                <li><a class="dropdown-item" href="#">Jabones</a></li>
+                                <li><a class="dropdown-item" href="#">Pañuelos</a></li>
+                                <li><a class="dropdown-item" href="#">Repelente</a></li>
+                                <li><a class="dropdown-item" href="#">Otros</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Curación
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Acohol, agua oxigenada y antisepticos</a></li>
+                                <li><a class="dropdown-item" href="#">Algodón</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"> <a class="nav-link" href="#">Instrumental</a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="#">Salud sexual</a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="#">Vitaminas</a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="#">Otros</a> </li>
+                    </ul>
+                    <!---Iconos-->
+                    <ul class="navbar_user">
+                        <li class="checkout">
+                        <a href="#">
+                            <i class='bx bxs-home'></i>
+                            
+                        </a>
+                        </li>
+                        <!--favoritos-->
+                        <li class="checkout">
+                        <a href="#">
+                            <i class='bx bxs-heart'></i>
+                            <span id="checkout_items" class="checkout_items">0</span>
+                        </a>
+                        </li>
+                        <!--Usuario-->
+                        <li class="checkout">
+                        <a href="#">
+                            <i class='bx bxs-cart' ></i>
+                            <span id="checkout_items" class="checkout_items">0</span>
+                        </a>
+                        </li>
+                    
+                    </ul>
+                </div>
+            </nav>
+            <div class="content-wrapper">
+                    <div class="container row justify-content-center">
+                                    <h4 class="main-title col-md-7 ps-md-4 col-xs-12 col-sm-6 col-md-8" >Mis Datos</h4>
+                                    <h5 class="col-md-7 ps-md-4 mt-4 datos .col-xs-6 .col-sm-4">Datos de cuenta</h5>
+                                    <div class="container d-flex justify-content-center edita-btn">
+                                        <button class="btn btn-edit edita-movil" id="modal" data-toggle="modal" data-target="#my-modal">
+                                            <i class='bx bxs-edit-alt'></i> Editar
+                                        </button>
+                                        <div id="my-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered justify-content-center " role="document">
+                                                <div class="modal-content border-0 mx-3">
+                                                    <div class="modal-body p-0">
+                                                        <div class="row justify-content-center">
+                                                            <div class="col">
+                                                                <div class="card border-0">
+                                                                    <div class="card-header p-3">
+                                                                        <div class="row align-items-center">
+                                                                            <div class="col-auto">
+                                                                                <h5>Editar mis datos</h5>
+                                                                            </div>
+                                                                            <div class="col text-right"><button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span class="cross" aria-hidden="true">&times;</span> </button></div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <form class="card-body" [formGroup]="perfilForm">
+                                                                        <div class="row my-3">
+                                                                            <div class="col">
+                                                                                <div class="form-group mt-1 mb-1"> 
+                                                                                    <input type="text" id="nombre" class="form-control pl-3 " value="{{nombre}}" required formControlName="nombre_perfil" [(ngModel)]="nombre"> 
+                                                                                    <label class="ml-3 form-control-placeholder" for="email">Nombre</label> 
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="row my-3">
+                                                                            <div class="col">
+                                                                                <div class="form-group mt-1 mb-1"> 
+                                                                                    <input type="text" id="apellido" class="form-control pl-3 " value="{{apellidos}}" required formControlName="apellido_perfil" [(ngModel)]="apellidos"> 
+                                                                                    <label class="ml-3 form-control-placeholder" for="email">apellido</label>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="row my-3">
+                                                                            <div class="col">
+                                                                                <div class="form-group mt-1 mb-1"> 
+                                                                                    <input type="text" id="email" class="form-control pl-3 " value="{{correo}}" required  formControlName="correo_perfil" [(ngModel)]="correo"> 
+                                                                                    <label class="ml-3 form-control-placeholder" for="email">correo</label>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="row my-3">
+                                                                            <div class="col">
+                                                                                <div class="form-group mt-1 mb-1"> 
+                                                                                    <input type="text" id="telefono" class="form-control pl-3 " value="{{telefono}}" required formControlName="telefono_perfil" [(ngModel)]="telefono"> 
+                                                                                    <label class="ml-3 form-control-placeholder" for="email">telefono</label> 
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="row mt-4 mb-3">
+                                                                            <div class="col"><button type="button" id="Submit" class="btn btn-primary btn-block" data-dismiss="modal" (click)="editarPerfil()"><b>Guardar</b></button></div>
+                                                                        </div>
+                                                                    </form>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                    <!----------------------------------------------------->
+                                    <div class="cuenta">
+                                        <div class="container">
+                                            <div class="row justify-content-center">
+                                                <div class="col-md-7  col-xs-12 col-sm-12">
+                                                    <div class="info col-md-12  col-xs-12 col-sm-12 col-lg-12">
+                                                        <div class="d-flex align-items-center justify-content-between renglon">
+                                                            <p class="py-2">Nombre y apellido</p>
+                                                            <p class="py-2 text-muted ">{{nombre}} {{apellidos}}</p>
+                                                        </div>
+                                                        <div class="d-flex align-items-center justify-content-between renglon">
+                                                            <p class="py-2">E-mail</p>
+                                                            <p class="py-2 text-muted">{{correo}}</p>
+                                                        </div>
+                                                        <div class="d-flex align-items-center justify-content-between renglon">
+                                                            <p class="py-2">Contraseña</p>
+                                                            <p class="py-2 text-muted">••••••••</p>
+                                                        </div>
+                                                        <div class="d-flex align-items-center justify-content-between renglon"> <!--border-bottom-->
+                                                            <p class="py-2">Teléfono</p>
+                                                            <p class="py-2 text-muted">{{telefono}}</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                    </div>
+                    <!---------------------TARJETAS-------------------------->
+                    <div class="container row justify-content-center">
+                        <h5 class="col-md-7 ps-md-4 mt-4 mb-4">Tarjetas</h5>
+                        <div class="row" *ngIf="!info_tarjetas">
+                            <div class="card col-xs-12 col-sm-12  col-md-8 col-lg-6 ">
+                                <div class="card-body row">
+                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                        <h4 class="text-center">No tienes ninguna Tarjeta</h4>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                                        <button class="nuevo-dato" (click)="addTarjeta()"><i class='bx bxs-plus-circle'></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" *ngIf="info_tarjetas">
+                            <div class="card col-xs-12 col-sm-12  col-md-8 col-lg-6 ">
+                                <div class="card-body row" *ngFor="let datos of info_tarjetas">
+                                    <div class="col-xs-2 col-sm-1  col-md-2 col-lg-2">
+                                        
+                                        <img class="" src="assets/img/tarjeta.svg" alt="Card image cap" width="100px" height="100px">
+                                    </div>
+                                    <div class="col-xs-10 col-sm-5  col-md-4 col-lg-4">
+                                        <h4 class="card-title propietario">Tarjeta</h4>
+                                        <p class="card-text margen-texto">{{datos.Nombre_Titular}}</p>
+                                        <p class="card-text margen-texto" >XXXX-XXXX-XXXX-{{datos.Numero_Tarjeta.toString().substr(12,4)}}</p>
+                                    </div>
+                                    <!-----Editar-->
+                                    <div class="col-xs-12 col-sm-3  col-md-3 col-lg-3">
+                                        <button type="button" class="btn btn-delete float-md-right" id="modal" data-toggle="modal" data-target="#my-modal">
+                                            <i class='bx bxs-edit-alt'></i></button>
+                                        <div id="my-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered justify-content-center " role="document">
+                                                <div class="modal-content border-0 mx-3">
+                                                    <div class="modal-body p-0">
+                                                        <div class="row justify-content-center">
+                                                            <div class="col">
+                                                                <div class="card border-0">
+                                                                    <div class="card-header p-3">
+                                                                        <div class="row align-items-center">
+                                                                            <div class="col-auto">
+                                                                                <h5>Editar mis datos</h5>
+                                                                            </div>
+                                                                            <div class="col text-right"><button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span class="cross" aria-hidden="true">&times;</span> </button></div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="card-body">
+                                                                        <div class="row my-3">
+                                                                            <div class="col">
+                                                                                <div class="form-group mt-1 mb-1"> 
+                                                                                    <input type="text" id="nombre" class="form-control pl-3 " required> 
+                                                                                    <label class="ml-3 form-control-placeholder" for="email">{{nombre}}</label> 
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="row my-3">
+                                                                            <div class="col">
+                                                                                <div class="form-group mt-1 mb-1"> 
+                                                                                    <input type="text" id="apellido" class="form-control pl-3 " required> 
+                                                                                    <label class="ml-3 form-control-placeholder" for="email">{{apellidos}}</label> 
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="row my-3">
+                                                                            <div class="col">
+                                                                                <div class="form-group mt-1 mb-1"> 
+                                                                                    <input type="text" id="email" class="form-control pl-3 " required> 
+                                                                                    <label class="ml-3 form-control-placeholder" for="email">{{correo}}</label> </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="row my-3">
+                                                                            <div class="col">
+                                                                                <div class="form-group mt-1 mb-1"> 
+                                                                                    <input type="text" id="password" class="form-control pl-3 " required> 
+                                                                                    <label class="ml-3 form-control-placeholder" for="email">Contraseña</label> </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="row my-3">
+                                                                            <div class="col">
+                                                                                <div class="form-group mt-1 mb-1"> 
+                                                                                    <input type="text" id="telefono" class="form-control pl-3 " required> 
+                                                                                    <label class="ml-3 form-control-placeholder" for="email">{{telefono}}</label> </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="row mt-4 mb-3">
+                                                                            <div class="col"><button type="button" id="Submit" class="btn btn-primary btn-block" data-dismiss="modal"><b>Guardar</b></button></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-----Eliminar-->
+                                    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                                        <button type="button" class="btn btn-delete float-md-right">Eliminar</button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <button type="button" class="btn btn-primary float-md-right add-movil" (click)="tarjeta()">+ Tarjeta</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!----------------------DOMOCILIOS-------------------------->
+                    <div class="container row justify-content-center">
+                        <h5 class="col-md-7 ps-md-4 mt-4 mb-4">Direcciones</h5>
+                        <div class="row" *ngIf="!info_domicilios">
+                            <div class="card col-xs-12 col-sm-12  col-md-8 col-lg-6 ">
+                                <div class="card-body row ">
+                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                        <h4 class="text-center">No tienes ningun Domicilio</h4>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                                        <button class="nuevo-dato " (click)="addDomicilios()"><i class='bx bxs-plus-circle'></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" *ngIf="info_domicilios">
+                            <div class="card col-xs-12 col-sm-12  col-md-8 col-lg-6 ">
+                                <div class="card-body row" *ngFor="let datos of info_domicilios">
+                                    <div class="col-xs-2 col-sm-1  col-md-2 col-lg-2">
+                                        <img class="" src="assets/img/direccion.svg" alt="Card image cap">
+                                    </div>
+                                    <div class="col-xs-10 col-sm-5  col-md-4 col-lg-4">
+                                        <h4 class="card-title propietario">CP: {{datos.calle}}</h4>
+                                        <p class="card-text margen-texto"> {{datos.cp}}</p>
+                                        <p class="card-text margen-texto">{{datos.tipo_domicilio}}</p>
+                                    </div>
+                                    <!-----Editar-->
+                                    <div class="col-xs-12 col-sm-3  col-md-3 col-lg-3">
+                                        <button type="button" class="btn btn-delete float-md-right" id="modal2" data-toggle="modal" (click)="actualizarDireccion(datos.id)" data-target="#my-modal2">
+                                            <i class='bx bxs-edit-alt'></i></button>
+                                        <div id="my-modal2" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered justify-content-center " role="document">
+                                                <div class="modal-content border-0 mx-3">
+                                                    <div class="modal-body p-0">
+                                                        <div class="row justify-content-center">
+                                                            <div class="col">
+                                                                <div class="card border-0">
+                                                                    <div class="card-header p-3">
+                                                                        <div class="row align-items-center">
+                                                                            <div class="col-auto">
+                                                                                <h5>Editar mi dirección</h5>
+                                                                            </div>
+                                                                            <div class="col text-right"><button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span class="cross" aria-hidden="true">&times;</span> </button></div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <form class="card-body" [formGroup]="editarForm" (ngSubmit)="editarDomicilio()">
+                                                                        <div class="row my-3">
+                                                                            <div class="col">
+                                                                                <div class="form-group mt-1 mb-1"> 
+                                                                                    <input type="text" id="calle" class="form-control pl-3 " value="{{calle}}" required formControlName="calle_editar" [(ngModel)]="calle">
+                                                                                    <label class="ml-3 form-control-placeholder" for="email">Calle</label>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="row my-3">
+                                                                            <div class="col">
+                                                                                <div class="form-group mt-1 mb-1"> 
+                                                                                    <input type="text" id="num_ex" class="form-control pl-3 " value="{{num_ex}}" required formControlName="numex_editar" [(ngModel)]="num_ex">
+                                                                                    <label class="ml-3 form-control-placeholder" for="email">Número exterior</label>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="row my-3">
+                                                                            <div class="col">
+                                                                                <div class="form-group mt-1 mb-1"> 
+                                                                                    <input type="text" id="num-in" class="form-control pl-3 " value="{{num_in}}" required formControlName="numin_editar" [(ngModel)]="num_in"> 
+                                                                                    <label class="ml-3 form-control-placeholder" for="email">Número interior</label>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="row my-3">
+                                                                            <div class="col">
+                                                                                <div class="form-group mt-1 mb-1"> 
+                                                                                    <input type="text" id="cp" class="form-control pl-3 " value="{{cp}}" required formControlName="cp_editar" [(ngModel)]="cp"> 
+                                                                                    <label class="ml-3 form-control-placeholder" for="email">CP</label>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="row my-3">
+                                                                            <div class="col">
+                                                                                <div class="form-group mt-1 mb-1"> 
+                                                                                    <input type="text" id="telefono" class="form-control pl-3 " value="{{tel_direc}}" required formControlName="tel_editar" [(ngModel)]="tel_direc"> 
+                                                                                    <label class="ml-3 form-control-placeholder" for="email">Telefono</label> 
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="row my-3">
+                                                                            <div class="col">
+                                                                                <div class="form-group mt-1 mb-1"> 
+                                                                                    <input type="text" id="telefono" class="form-control pl-3 " value="{{tipo_dom}}" required formControlName="dom_editar" [(ngModel)]="tipo_dom"> 
+                                                                                    <label class="ml-3 form-control-placeholder" for="email">Tipo domicilio</label> 
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="row my-3">
+                                                                            <div class="col">
+                                                                                <div class="form-group mt-1 mb-1"> 
+                                                                                    <input type="text" id="telefono" class="form-control pl-3 " value="{{indicaciones}}" required formControlName="indicacion_editar" [(ngModel)]="indicaciones"> 
+                                                                                    <label class="ml-3 form-control-placeholder" for="email">Indicaciones</label> 
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="row mt-4 mb-3">
+                                                                            <div class="col"><button type="button" id="Submit" class="btn btn-primary btn-block" data-dismiss="modal" (click)="editarDomicilio()"><b>Guardar</b></button></div>
+                                                                        </div>
+                                                                    </form>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-----Eliminar-->
+                                    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                                        <button type="button" class="btn btn-delete float-md-right">Eliminar</button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <button type="button" class="btn btn-primary float-md-right add-movil" (click)="direccion()">+ Dirección</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!---------------------FACTURA-------------------------->
+                    <div class="container row justify-content-center">
+                        <h5 class="col-md-7 ps-md-4 mt-4 mb-4">Facturas</h5>
+                        <div class="row" *ngIf="!info_facturas">
+                            <div class="card col-xs-12 col-sm-12  col-md-8 col-lg-6 ">
+                                <div class="card-body row">
+                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                        <h4 class="text-center">No tienes ninguna Factura</h4>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                                        <button class="nuevo-dato" (click)="addFactura()"><i class='bx bxs-plus-circle'></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" *ngIf="info_facturas">
+                            <div class="card col-xs-12 col-sm-12  col-md-8 col-lg-6 mb-4">
+                                <div class="card-body row" *ngFor="let datos of info_facturas">
+                                    <div class="col-xs-2 col-sm-1  col-md-2 col-lg-2">
+                                        <img class="" src="assets/img/factura.svg" alt="Card image cap" width="100px" height="100px">
+                                    </div>
+                                    <div class="col-xs-10 col-sm-5  col-md-4 col-lg-4">
+                                        <h4 class="card-title propietario">{{datos.NOMBRE}}</h4>
+                                        <p class="card-text margen-texto">{{datos.RFC}}</p>
+                                    </div>
+                                    <!-----Editar-->
+                                    <div class="col-xs-12 col-sm-3  col-md-3 col-lg-3">
+                                        <button type="button" class="btn btn-delete float-md-right" id="modal" data-toggle="modal" (click)="actualizarFactura(datos.id)" data-target="#my-modal3">
+                                            <i class='bx bxs-edit-alt' ></i></button>
+                                        <div id="my-modal3" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered justify-content-center " role="document">
+                                                <div class="modal-content border-0 mx-3">
+                                                    <div class="modal-body p-0">
+                                                        <div class="row justify-content-center">
+                                                            <div class="col">
+                                                                <div class="card border-0">
+                                                                    <div class="card-header p-3">
+                                                                        <div class="row align-items-center">
+                                                                            <div class="col-auto">
+                                                                                <h5>Editar mi Factura</h5>
+                                                                            </div>
+                                                                            <div class="col text-right"><button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span class="cross" aria-hidden="true">&times;</span> </button></div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <form class="card-body" [formGroup]="facEditarForm">
+                                                                        <div class="row my-3">
+                                                                            <div class="col">
+                                                                                <div class="form-group mt-1 mb-1"> 
+                                                                                    <input type="text" id="nombre" class="form-control pl-3 " required value="{{nombre_fac}}" required formControlName="nombre_fe" [(ngModel)]="nombre_fac"> 
+                                                                                    <label class="ml-3 form-control-placeholder" for="email">Nombre</label> </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="row my-3">
+                                                                            <div class="col">
+                                                                                <div class="form-group mt-1 mb-1"> 
+                                                                                    <input type="text" id="email" class="form-control pl-3 " required value="{{correo_fac}}" formControlName="correo_fe"  [(ngModel)]="correo_fac"> 
+                                                                                    <label class="ml-3 form-control-placeholder" for="email">Correo</label> </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="row my-3">
+                                                                            <div class="col">
+                                                                                <div class="form-group mt-1 mb-1"> 
+                                                                                    <input type="text" id="rfc" class="form-control pl-3 " required value="{{rfc}}" formControlName="rfc_fe"  [(ngModel)]="rfc"> 
+                                                                                    <label class="ml-3 form-control-placeholder" for="email">RFC</label> 
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="row my-3">
+                                                                            <div class="col">
+                                                                                <div class="form-group mt-1 mb-1"> 
+                                                                                    <input type="text" id="direc1" class="form-control pl-3 " required value="{{direc1_fac}}" formControlName="direc1_fe"  [(ngModel)]="direc1_fac"> 
+                                                                                    <label class="ml-3 form-control-placeholder" for="email">Dirección 1</label> 
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="row my-3">
+                                                                            <div class="col">
+                                                                                <div class="form-group mt-1 mb-1"> 
+                                                                                    <input type="text" id="direc2" class="form-control pl-3 " required value="{{direc2_fac}}" formControlName="direc2_fe"  [(ngModel)]="direc2_fac"> 
+                                                                                    <label class="ml-3 form-control-placeholder" for="email">Dirección 2</label> </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="row my-3">
+                                                                            <div class="col">
+                                                                                <div class="form-group mt-1 mb-1"> 
+                                                                                    <input type="text" id="cp" class="form-control pl-3 " required value="{{cp_fac}}" formControlName="cp_fe"  [(ngModel)]="cp_fac"> 
+                                                                                    <label class="ml-3 form-control-placeholder" for="email">CP</label> </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="row my-3">
+                                                                            <div class="col">
+                                                                                <div class="form-group mt-1 mb-1"> 
+                                                                                    <input type="text" id="lada" class="form-control pl-3 " required value="{{lada}}" formControlName="lada_fe"  [(ngModel)]="lada"> 
+                                                                                    <label class="ml-3 form-control-placeholder" for="email">Lada</label> </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="row my-3">
+                                                                            <div class="col">
+                                                                                <div class="form-group mt-1 mb-1"> 
+                                                                                    <input type="text" id="tel" class="form-control pl-3 " required value="{{tel_fac}}" formControlName="tel_fe"  [(ngModel)]="tel_fac"> 
+                                                                                    <label class="ml-3 form-control-placeholder" for="email">Telefono</label> </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="row mt-4 mb-3">
+                                                                            <div class="col"><button type="button" id="Submit" class="btn btn-primary btn-block" data-dismiss="modal" (click)="editarFactura()"><b>Guardar</b></button></div>
+                                                                        </div>
+                                                                    </form>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-----Eliminar-->
+                                    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                                        <button type="button" class="btn btn-delete float-md-right">Eliminar</button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <button type="button" class="btn btn-primary float-md-right add-movil" (click)="factura()">+ Factura</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-------------->
+            </div>
+            <!-----footer---->
+            <footer>
+                <div class="footer-todo">
+                <div class="cuerpo-footer">
+                    <div class="primer-columna">
+                    <div class="row">
+                    <img src="assets/img/LogoFarmaPlus-C.png" alt="" class="logo-footer">
+                    </div>
+                    <div class="redes"><i class='bx bxl-facebook'></i>
+                        <label>Farma Plus</label>
+                    </div>
+                    <div class="redes">
+                        <i class='bx bx-mail-send'></i>
+                        <label>farmaplus.mx@fama</label>
+                    </div>
+                    <div class="redes">
+                        <i class='bx bxl-instagram' ></i>
+                        <label>@farmaplus</label>
+                    </div>
+                    <div class="redes">
+                        <i class='bx bxl-whatsapp' ></i>
+                        <label >+(52)78547854</label>
+                    </div>
+                    <div class="redes">
+                        <img src="assets/img/payment-item.png" class="pago">
+                    </div>
+                    </div>
+                    <div class="segu-columna">
+                        <h1>Atención a Clientes</h1>
+                        <div class="atencion">
+                        <a href="#">Contáctanos</a>
+                        </div>
+                        <div class="atencion">
+                        <a href="#">Localizador de Farmacias</a>
+                        </div>
+                        <div class="atencion">
+                        <a href="#">Facturación</a>
+                        </div>
+                    </div>
+                    <div class="tercer-columna">
+                    <h1>Políticas</h1>
+                    <div class="politicas">
+                        <a href="#">Aviso de Privacidad</a>
+                    </div>
+                    <div class="politicas">
+                        <a href="#">Preguntas Frecuentes</a>
+                    </div>
+                    <div class="politicas">
+                        <a href="#">Términos y condiciones</a>
+                    </div>
+                    </div>
+                </div>
+                </div>
+                <div class="contenedor-footer">
+                <div class="footer-derechos">
+                    <div class="derechos">
+                    ©<a href="#"> Farma Plus | </a> Todos los derechos reservados 2021
+                    </div>
+                    <div class="information-footer">
+                    <a href="#">Atención a Clientes </a>|
+                    <a href="#">Privacidad y Politica </a>| 
+                    <a href="#">Terminos y condiciones </a>
+                    </div>
+                </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>

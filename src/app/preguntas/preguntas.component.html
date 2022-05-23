@@ -1,0 +1,124 @@
+<html>
+    <body>
+      <!----------Menu---------------->
+      <header>
+        <div class="menu">
+            <!--logo-->
+            <a href="#" [routerLink]='[""]'><img src="assets/img/LogoFarmaPlus-C.png" alt="" class="logoFarma"></a>
+            <!--Menu-->
+            <nav  class="menu-category">
+                <ul><!--1-->
+                <li>
+                    <a href="#">Medicamentos</a>
+                    <ul><!--2-->
+                    <li><a href="#">Dolor</a> </li>
+                    <li><a href="#">Friebre</a> </li>
+                    <li><a href="#"> gripe</a> </li>
+                    <li><a href="#">estomacal</a> </li>
+                    </ul><!--Fin del 2-->
+                </li>
+                <li>
+                    <a href="#">Cuidado Personal</a>
+                    <ul><!--2-->
+                    <li>
+                        <a href="#">Damas <i class='bx bx-chevron-right'></i></a>
+                        <ul><!--3-->
+                        <li><a href="#">Jabón</a></li>
+                        <li><a href="#">Toallas Higienicas</a></li>
+                        <li><a href="#">Tampones</a></li>
+                        </ul><!--Fin 3-->
+                    </li>
+                    <li><a href="#">Caballero</a> </li>
+                    </ul><!--Fin del 2-->
+                </li>
+                <li><a href="#" [routerLink]='["Bebes"]'>Bebés</a></li>
+                <li><a href="#">Vitaminas</a></li>
+                <li><a href="#">Botiquín</a></li>
+                <li><a href="#">Salud Sexual</a></li>
+                <li><a href="#">Alimentos</a></li>
+                </ul><!--Fin del 1-->
+            </nav>
+            <!--Usuario-->
+            <ul class="navbar_user">
+                <li class="checkout">
+                  <a href="#">
+                    <i class='bx bxs-user'></i>
+                    
+                  </a>
+                </li>
+                <!--favoritos-->
+                <li class="checkout">
+                  <a href="#">
+                    <i class='bx bxs-heart'></i>
+                    <span id="checkout_items" class="checkout_items">0</span>
+                  </a>
+                </li>
+                <!--Usuario-->
+                <li class="checkout">
+                  <a href="#">
+                    <i class='bx bxs-cart' ></i>
+                    <span id="checkout_items" class="checkout_items">0</span>
+                  </a>
+                </li>
+              
+            </ul>
+        </div>
+      </header>
+      <div class="container justify-content-center ">
+        <div class="w-100 overflow-auto order-2 order-md-1">
+            <div class="card-group-control card-group-control-right">
+                <div class="card mb-2 w-100">
+                    <div class="card-header">
+                        <h6 class="card-title"> 
+                          <a class="text-muted text-uppercase" data-toggle="collapse" href="#question1"> 
+                            <i class='bx bx-check-circle'></i> What is Lorem Ipsum? <i class='bx bx-minus float-right'></i> 
+                          </a>
+                        </h6>
+                    </div>
+                    <div id="question1" class="collapse show" style="">
+                        <div class="card-body"> 
+                          Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                          when an unknown printer took a galley of type and scrambled it to make a type specimen book 
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-2 w-100">
+                    <div class="card-header">
+                        <h6 class="card-title"> 
+                          <a class="text-muted text-uppercase" data-toggle="collapse" href="#question2"> 
+                            <i class='bx bx-check-circle'></i> Where does it come from? <i class='bx bx-minus float-right'></i> 
+                          </a> 
+                        </h6>
+                    </div>
+                    <div id="question2" class="collapse" style="">
+                        <div class="card-body"> 
+                          Contrary to popular belief, Lorem Ipsum is not simply random text. 
+                          It has roots in a piece of classical Latin literature from 45 BC, 
+                          making it over 2000 years old. Richard McClintock, a Latin professor 
+                          at Hampden-Sydney College in Virginia, 
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-2 w-100">
+                    <div class="card-header">
+                        <h6 class="card-title"> 
+                          <a class="text-muted text-uppercase" data-toggle="collapse" href="#question3"> 
+                            <i class='bx bx-check-circle'></i> Where can I get some? <i class='bx bx-minus float-right'></i> 
+                          </a> 
+                        </h6>
+                    </div>
+                    <div id="question3" class="collapse" style="">
+                        <div class="card-body"> 
+                          There are many variations of passages of Lorem Ipsum available, 
+                          but the majority have suffered alteration in some form, by injected humour, 
+                          or randomised words which don't look even slightly believable. If you are going 
+                          to use a passage of Lorem Ipsum 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </body>
+</html>

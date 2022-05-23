@@ -1,0 +1,579 @@
+<html>
+        <body>
+            <!--Menu-->
+            <div class="container-fluid px-0">
+                <nav class="navbar navbar-expand-md navbar-light bg-white p-0"> 
+                <button class="navbar-toggler mr-3" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> 
+                    <span class="navbar-toggler-icon"></span> 
+                </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a href="#" [routerLink]='[""]' ><img src="assets/img/LogoFarmaPlus-C.png" alt="" class="logoFarma"></a>
+                            </li>
+                            <li class="nav-item"> 
+                                <a class="nav-link" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><a href="" routerLink="/Medicamentos">Medicamentos</a>
+                                <i class='bx bxs-chevron-down'></i>
+                                </a>
+                                <div class="dropdown-menu" id="dropdown-menu1" aria-labelledby="navbarDropdown1">
+                                <div class="container">
+                                    <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="row d-flex tab">
+                                        <div class="d-flex flex-column"> 
+                                            <a class="dropdown-item" href="#" routerLink="/Alergias">
+                                            <h6 class="mb-0">Alergía</h6> 
+                                            </a> 
+                                        </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="row d-flex tab">
+                                        <div class="d-flex flex-column"> 
+                                            <a class="dropdown-item" href="#" routerLink="/Antibiotico">
+                                            <h6 class="mb-0">Antibiótico</h6> 
+                                            </a> 
+                                        </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="row d-flex tab">
+                                        <div class="d-flex flex-column"> 
+                                            <a class="dropdown-item" href="#" routerLink="/Antimicotico">
+                                            <h6 class="mb-0">Antimicótico</h6> 
+                                            </a> 
+                                        </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="row d-flex tab">
+                                        <div class="d-flex flex-column"> 
+                                            <a class="dropdown-item" href="#" routerLink="/Antivirales">
+                                            <h6 class="mb-0">Antivirales</h6> 
+                                            </a> 
+                                        </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="row d-flex tab">
+                                        <div class="d-flex flex-column"> 
+                                            <a class="dropdown-item" href="#" routerLink="/Parasitos">
+                                            <h6 class="mb-0">Contra Parásitos</h6> 
+                                            </a> 
+                                        </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="row d-flex tab">
+                                        <div class="d-flex flex-column"> 
+                                            <a class="dropdown-item" href="#" routerLink="/Dental">
+                                            <h6 class="mb-0">Dental</h6> 
+                                            </a> 
+                                        </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="row d-flex tab">
+                                        <div class="d-flex flex-column"> 
+                                            <a class="dropdown-item" href="#" routerLink="/Inflamacion">
+                                            <h6 class="mb-0">Dolor e inflamación</h6> 
+                                            </a> 
+                                        </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="row d-flex tab">
+                                        <div class="d-flex flex-column"> 
+                                            <a class="dropdown-item" href="#" routerLink="/Estomacal">
+                                            <h6 class="mb-0">Estomacal</h6> 
+                                            </a> 
+                                        </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="row d-flex tab">
+                                        <div class="d-flex flex-column"> 
+                                            <a class="dropdown-item" href="#"  routerLink="/Relajante">
+                                            <h6 class="mb-0">Relajantes</h6> 
+                                            </a> 
+                                        </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                                </div>
+                            </li>
+                            <li class="nav-item"> 
+                                <a class="nav-link" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><a href="" routerLink="/Aparatos">Aparatos</a> 
+                                <i class='bx bxs-chevron-down'></i>
+                                </a>
+                                <div class="dropdown-menu" id="dropdown-menu2" aria-labelledby="navbarDropdown2">
+                                <div class="container">
+                                    <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="row d-flex tab">
+                                        <div class="d-flex flex-column"> 
+                                            <a class="dropdown-item" href="#" routerLink="/Glucosa">
+                                            <h6 class="mb-0">Glucosa</h6> 
+                                            </a> 
+                                        </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="row d-flex tab">
+                                        <div class="d-flex flex-column"> 
+                                            <a class="dropdown-item" href="#" routerLink="/Presion">
+                                            <h6 class="mb-0">Presión</h6> 
+                                            </a> 
+                                        </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="row d-flex tab">
+                                        <div class="d-flex flex-column"> 
+                                            <a class="dropdown-item" href="#" routerLink="/Aparato-Respiratorio">
+                                            <h6 class="mb-0">Respiratorio</h6> 
+                                            </a> 
+                                        </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="row d-flex tab">
+                                        <div class="d-flex flex-column"> 
+                                            <a class="dropdown-item" href="#" routerLink="/Temperatura">
+                                            <h6 class="mb-0">Temperatura</h6> 
+                                            </a> 
+                                        </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><a href="" routerLink="/Bebes">Bebés</a> 
+                                </a>
+                            </li>
+                            <li class="nav-item"> 
+                                <a class="nav-link" href="#" id="navbarDropdown10" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Cuidado personal
+                                <i class='bx bxs-chevron-down'></i>
+                                </a>
+                                <div class="dropdown-menu" id="dropdown-menu10" aria-labelledby="navbarDropdown10">
+                                <div class="container">
+                                    <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="row d-flex tab">
+                                        <div class="d-flex flex-column"> 
+                                            <a class="dropdown-item" href="#">
+                                            <h6 class="mb-0">Cosméticos</h6> 
+                                            </a> 
+                                        </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="row d-flex tab">
+                                        <div class="d-flex flex-column"> 
+                                            <a class="dropdown-item" href="#">
+                                            <h6 class="mb-0">Cuidado de piel</h6> 
+                                            </a> 
+                                        </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="row d-flex tab">
+                                        <div class="d-flex flex-column"> 
+                                            <a class="dropdown-item" href="#">
+                                            <h6 class="mb-0">Higiene íntima</h6> 
+                                            </a> 
+                                        </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="row d-flex tab">
+                                        <div class="d-flex flex-column"> 
+                                            <a class="dropdown-item" href="#">
+                                            <h6 class="mb-0">Jabones</h6> 
+                                            </a> 
+                                        </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="row d-flex tab">
+                                        <div class="d-flex flex-column"> 
+                                            <a class="dropdown-item" href="#">
+                                            <h6 class="mb-0">Pañuelos</h6> 
+                                            </a> 
+                                        </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="row d-flex tab">
+                                        <div class="d-flex flex-column"> 
+                                            <a class="dropdown-item" href="#">
+                                            <h6 class="mb-0">Repelente</h6> 
+                                            </a> 
+                                        </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="row d-flex tab">
+                                        <div class="d-flex flex-column"> 
+                                            <a class="dropdown-item" href="#">
+                                            <h6 class="mb-0">Otros</h6> 
+                                            </a> 
+                                        </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" id="navbarDropdown4" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Curación
+                                <i class='bx bxs-chevron-down'></i>
+                                </a>
+                                <div class="dropdown-menu" id="dropdown-menu4" aria-labelledby="navbarDropdown4">
+                                <div class="container">
+                                    <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="row d-flex tab">
+                                        <div class="d-flex flex-column"> 
+                                            <a class="dropdown-item" href="#">
+                                            <h6 class="mb-0">Alcohol, agua oxigenada y antisepticos</h6> 
+                                            </a> 
+                                        </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="row d-flex tab">
+                                        <div class="d-flex flex-column"> 
+                                            <a class="dropdown-item" href="#">
+                                            <h6 class="mb-0">Algodón</h6> 
+                                            </a> 
+                                        </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" id="navbarDropdown5" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Instrumental
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" id="navbarDropdown6" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Salud sexual
+                                </a>
+                            </li>
+                            <li  class="nav-item">
+                                <a class="nav-link" href="#" id="navbarDropdown7" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Vitaminas
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" id="navbarDropdown8" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Otros
+                                </a>
+                            </li>
+                            <ul class="navbar_user">
+                                <li class="checkout">
+                                <a href="#">
+                                    <i class='bx bxs-user usuario'></i>
+                                    
+                                </a>
+                                </li>
+                                <!--favoritos-->
+                                <li class="checkout">
+                                <a href="#">
+                                    <i class='bx bxs-heart'></i>
+                                    <span id="checkout_items" class="checkout_items">0</span>
+                                </a>
+                                </li>
+                                <!--Usuario-->
+                                <li class="checkout">
+                                <a href="#">
+                                    <i class='bx bxs-cart' ></i>
+                                    <span id="checkout_items" class="checkout_items">0</span>
+                                </a>
+                                </li>
+                            
+                            </ul>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <!-- ========================= SECTION CONTENT ========================= -->
+            <section class="section-content padding-y bg">
+                <div class="container">
+            
+                <article class="card">
+                    <div class="card-body" >
+                            <div class="row">
+                                <aside class="col-md-6">
+                                        <article class="gallery-wrap">
+                                            <div class="card img-big-wrap">
+                                                <!--id para el uso de la funcion, que es donde se mostraran las imagenes en grande-->
+                                                <a href="#"> <img src="{{imageProducto}}" onerror="this.src='https://farmaplusmx.com/ImgOtras/logocorreo.png'" id="imageBox"></a>
+                                            </div> <!-- card img-big-wrap.// -->
+                                        </article> <!-- gallery-wrap .end// -->
+                                </aside>
+                                <main class="col-md-6">
+                                    <article>
+                                        <a href="#" class="text-primary btn-link">{{catProducto}}</a>
+                                        <h3 class="title">{{nombreProducto}}</h3>
+                                        <div>
+                                            <a href="#" class="btn-link  mr-3 text-muted"> <i class='bx bxs-heart' ></i> Favoritos</a>
+                                            <a href="#" class="btn-link text-muted"> <i class='bx bxs-cart-alt'></i> Agregar a carrito </a>
+                                        </div> 
+                
+                                        <hr>
+                            
+                                        <div class="mb-3">
+                                            <h6>Descripción</h6>
+                                            <ul class="list-dots mb-0">
+                                                <li>{{descripProducto}}</li>
+                                                <li>{{clavProducto}}</li>
+                                            </ul>
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <label class="text-muted">Cantidad:</label>
+                                            <div>
+                                                <!-- skin 7 -->
+                                                <div class="num-block skin-7">
+                                                    <div class="num-in">
+                                                    <span class="minus dis">-</span>
+                                                    <input type="text" class="in-num" value="1" readonly="">
+                                                    <span class="plus">+</span>
+                                                    </div>
+                                                </div>
+                                                <!-- / skin 7 -->
+                                            </div>            
+                                        </div>
+                
+                                        <div class="mb-3">
+                                            <var class="price h4">${{preciosProducto}}</var> <br>
+                                            <span class="monthly">Antes / $32.00 </span>
+                                        </div> <!-- price-detail-wrap .// -->
+                
+                                        <div class="mb-4">
+                                            <button class="btn btn-primary mr-1">Comprar Ahora</button>
+                                            <button class="btn btn-light">Agregar a carrito</button>
+                                        </div>
+                                        
+                                    </article> <!-- product-info-aside .// -->
+                                </main> <!-- col.// -->
+                            </div> <!-- row.// -->
+                    </div> <!-- card-body.// -->
+                </article>
+                <article class="card mt-5">
+                    <div class="card-body">
+                        <div class="row">
+                                <div id="accordion" class="myaccordion">
+                                    <div class="card">
+                                      <div class="card-header" id="headingOne">
+                                        <h2 class="mb-0">
+                                          <button class="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                            Características
+                                            <span class="fa-stack fa-sm">
+                                                <i class='bx bxs-circle fa-stack-2x'></i>
+                                                <i class='bx bxs-down-arrow  fa-stack-1x fa-inverse'></i>
+                                            </span>
+                                          </button>
+                                        </h2>
+                                      </div>
+                                      <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                                        <div class="card-body">
+                                          <ul>
+                                            <li>Laboratorio: {{labProducto}}</li>
+                                            <li>Dosis: {{dosProducto}}</li>
+                                            <li>Presentación: {{presProducto}}</li>
+                                            <li>Cantidad: {{cantProducto}}</li>
+                                          </ul>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="card">
+                                      <div class="card-header" id="headingTwo">
+                                        <h2 class="mb-0">
+                                          <button class="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            Políticas de envio
+                                            <span class="fa-stack fa-2x">
+                                                <i class='bx bxs-circle fa-stack-2x'></i>
+                                                <i class='bx bxs-down-arrow  fa-stack-1x fa-inverse'></i>
+                                            </span>
+                                          </button>
+                                        </h2>
+                                      </div>
+                                      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                        <div class="card-body">
+                                          <p>
+                                            Las ordenes de compra a través de las plataformas digitales tienen dos modalidades, solo aplican en Torreón, Coahuila:<br>  
+                                            Entrega de artículos a domicilio<br>
+                                            Recoger el producto seleccionado en tu farmacia más cercana<br><br>
+                                            La entrega de artículos a domicilio se hará a partir de un producto en delante, sin mínimo<br> 
+                                            ni máximo de compra.  Dentro del siguiente horario de actividades; 9:30 hrs a las 21:30 hrs.<br> 
+                                            El tiempo de entrega será dentro de las primeras 3 horas a partir de la salida del<br> 
+                                            producto de la sucursal. Sin embargo, FarmaPlus no se hace responsable por demoras en <br>
+                                            las entregas debido a causas externas tales como; saturación del servicio, tráfico vial, <br>
+                                            condición del clima, desastres naturales, etc.<br><br>
+                                            Si se realiza un pedido fuera del horario de servicio, antes mencionado, se podrá programar la<br>
+                                            entrega para el día siguiente con el horario antes mencionado.<br><br>
+                                            En productos de gran volumen no está disponible el envío a domicilio. <br><br>
+                                            Te recordamos que el precio de la APP puede variar en comparación de la sucursal, debido<br> 
+                                            a que existen promociones solo disponibles en mostrador<br><br>
+                                            El costo de envío: 40 pesos <br><br></p>
+                                            <h5>Política de envíos de antibióticos</h5>
+                                            <p>caso de antibióticos se requerirá subir una foto de la receta médica, donde se validará y<br>
+                                            en caso de aprobarse, se continuará con la entrega del mismo. Es indispensable tener la receta médica<br>
+                                            original ya que el repartidor la recogerá. Por lo anterior se indica a los clientes de FarmaPlus, realizar<br>
+                                            una foto o copia de la misma, para seguir las indicaciones médicas pertinentes. En caso de no entregar la<br>
+                                            receta médica al repartidor, se negará la entrega de dicho medicamento. Para solicitar el reembolso, se<br>
+                                            realizará una penalización del 30 % de la compra. Y se dará el 70% del valor total de la compra en el<br>
+                                            monedero electrónico para hacerse válido únicamente en FarmaPlus. <br><br> 
+                                        </p>
+                                        <h5>Compra en Línea de productos sin existencias.</h5>
+                                        <p>
+                                            Si el producto seleccionado no se encuentre en existencia, FarmaPlus se pondrá en contacto con el cliente<br> para informar la situación, proporcionándole alternativas de surtido o de lo contrario el cliente puede solicitar la cancelación del pedido y su respectivo reembolso.  
+                                        </p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="card">
+                                      <div class="card-header" id="headingThree">
+                                        <h2 class="mb-0">
+                                          <button class="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                            Cancelaciones y devoluciones
+                                            <span class="fa-stack fa-2x">
+                                                <i class='bx bxs-circle fa-stack-2x'></i>
+                                                <i class='bx bxs-down-arrow  fa-stack-1x fa-inverse'></i>
+                                            </span>
+                                          </button>
+                                        </h2>
+                                      </div>
+                                      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                                        <div class="card-body">
+                                            <p>No se aceptan devoluciones en ninguno de nuestros productos, antes de aceptar la entrega, favor de revisarlo.</p>
+                                            <br><br>
+                                            <h5>Devoluciones por error de envío</h5>
+                                            <p>Siempre y cuando se compruebe que el error es por parte de FarmaPlus.<br> 
+                                            En tal caso se deberá visitar la sucursal, solicitando la devolución del producto y mostrar lo siguiente:<br><br>
+                                            </p>
+                                            <ul>
+                                                <li>1.	Correo de confirmación de la compra</li>
+                                                <li>2.	Presentar el producto a devolver, en buen estado y sin abrir.</li>
+                                                <li>3.	Empaque en buenas condiciones y accesorios completos </li>
+                                            </ul>
+                                            <br>
+                                            <p>El reembolso se hará a través del monedero electrónico de FarmaPlus, con el monto equivalente de la compra y <br>
+                                                ser utilizado en cualquiera de las sucursales de la empresa.
+                                            </p>
+                                            <br><br>
+                                            <p>caso de haber sido manipulado, en mal estado o con alteraciones en empaque, no será válido el proceso de reembolso,<br>
+                                                ninguna circunstancia.
+                                            </p><br><br>
+                                            <h5>Política de Cancelaciones</h5>
+                                            <p>Para cancelar el pedido tendrá que llamar al 8711228483, si el pedido ya se realizó y quieres modificarlo, llama al mismo número.</p>
+                                            <br><br>
+                                            <p>Si se cancela el pedido y aun no ha salido la mercancía del establecimiento, se podrá realizar sin ninguna penalización.<br>
+                                                Si el producto se encuentra en la ruta del reparto, deberá de recibir el pedido, acudir con el mismo a la sucursal más<br>
+                                                cercana y entregarlo. En caso de solicitar un reembolso, se realizará una penalización del 20 % de la compra. Y se dará<br>
+                                                el 80% del valor total de la compra en el monedero electrónico para hacerse válido únicamente en FarmaPlus.</p>
+                                                <br><br>
+                                                <p>
+                                                    Para aclaraciones o dudas comunicarse al teléfono: 8711228483 o escríbenos al correo farmaplus.22@outlook.com
+                                                </p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                </div>
+                        </div> <!-- row.// -->
+                    </div> <!-- card-body.// -->
+                </article>
+                </div>
+                
+            
+            </section>
+
+            <!-------------Footer----------->
+            <footer>
+                <div class="footer-todo">
+                <div class="cuerpo-footer">
+                    <div class="primer-columna">
+                    <div class="row">
+                    <img src="assets/img/LogoFarmaPlus-C.png" alt="" class="logo-footer">
+                    </div>
+                    <div class="redes"><i class='bx bxl-facebook'></i>
+                        <label>Farma Plus</label>
+                    </div>
+                    <div class="redes">
+                        <i class='bx bx-mail-send'></i>
+                        <label>farmaplus.mx@fama</label>
+                    </div>
+                    <div class="redes">
+                        <i class='bx bxl-instagram' ></i>
+                        <label>@farmaplus</label>
+                    </div>
+                    <div class="redes">
+                        <i class='bx bxl-whatsapp' ></i>
+                        <label >+(52)78547854</label>
+                    </div>
+                    <div class="redes">
+                        <img src="assets/img/payment-item.png" class="pago">
+                    </div>
+                    </div>
+                    <div class="segu-columna">
+                        <h1>Atención a Clientes</h1>
+                        <div class="atencion">
+                        <a href="#">Contáctanos</a>
+                        </div>
+                        <div class="atencion">
+                        <a href="#">Localizador de Farmacias</a>
+                        </div>
+                        <div class="atencion">
+                        <a href="#">Facturación</a>
+                        </div>
+                    </div>
+                    <div class="tercer-columna">
+                    <h1>Políticas</h1>
+                    <div class="politicas">
+                        <a href="#">Aviso de Privacidad</a>
+                    </div>
+                    <div class="politicas">
+                        <a href="#">Preguntas Frecuentes</a>
+                    </div>
+                    <div class="politicas">
+                        <a href="#">Términos y condiciones</a>
+                    </div>
+                    </div>
+                </div>
+                </div>
+                <div class="contenedor-footer">
+                <div class="footer">
+                    <div class="copyright">
+                    ©<a href="#"> Farma Plus | </a> Todos los derechos reservados 2021
+                    </div>
+                    <div class="information-footer">
+                    <a href="#">Atención a Clientes </a>|
+                    <a href="#">Privacidad y Politica </a>| 
+                    <a href="#">Terminos y condiciones </a>
+                    </div>
+                </div>
+                </div>
+            </footer>
+    </body>
+</html>

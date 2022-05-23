@@ -1,0 +1,148 @@
+
+a:hover {
+  text-decoration: none;
+}
+
+/* =================  DEFINED VARIABLES =================== */
+
+[class*=hover-] {
+  transition: 0.5s;
+}
+
+
+/* ============== spacing ============== */
+
+
+
+.bg {
+  background-color: #f8f9fa;
+}
+
+
+/* --------------------- titles ---------------------- */
+
+.btn-light {
+  background-color: rgb(5, 172, 5);
+  border-color: #e4e4e4;
+  color: #fff;
+  
+}
+.btn-light i {
+  color: #fff;
+}
+.btn-light:hover {
+  background-color: rgb(19, 221, 19);
+  border-color: #5cbe0b;
+  color: #fff;
+}
+
+.btn .text + i {
+  margin-left: 10px;
+  color: #fff;
+}
+.btn i + .text {
+  margin-left: 10px;
+  color: #fff;
+}
+
+.itemside {
+  position: relative;
+  display: flex;
+  width: 100%;
+}
+.itemside .aside {
+  position: relative;
+  flex-shrink: 0;
+}
+.itemside .info {
+  padding-left: 15px;
+  padding-right: 7px;
+}
+.itemside p {
+  margin-bottom: 0;
+}
+.itemside .title {
+  display: block;
+  margin-bottom: 5px;
+  color: #212529;
+}
+.itemside a.title:hover {
+  color: #3167eb;
+}
+
+a.itemside {
+  color: initial;
+}
+
+
+
+/* --------- description list --------*/
+dl[class=row] {
+  margin-bottom: 0;
+}
+[class*=dlist-] {
+  margin-bottom: 5px;
+}
+[class*=dlist-] dd {
+  margin-bottom: 0;
+}
+
+.dlist-inline dt, .dlist-inline dd {
+  display: inline-block;
+}
+
+.dlist-align {
+  display: flex;
+}
+.dlist-align dt {
+  width: 150px;
+  word-wrap: break-word;
+  font-weight: normal;
+}
+.dlist-align dd {
+  flex-grow: 1;
+}
+
+/* IF CARD IS LINKED */
+a[class*=card] {
+  color: initial;
+}
+a[class*=card]:hover .title {
+  color: #3167eb;
+}
+
+
+.card .img-producto {
+  overflow: hidden;
+  /*background: #be940b;*/
+}
+
+
+.icontext {
+  display: inline-flex;
+  align-items: center;
+  vertical-align: middle;
+}
+.icontext p {
+  margin-bottom: 0;
+}
+.icontext .text {
+  width: 100%;
+  line-height: 1.2;
+}
+.icontext .icon {
+  position: relative;
+  margin-right: 10px;
+  flex-shrink: 0;
+  flex-grow: 0;
+}
+.icontext .title {
+  display: block;
+  margin-bottom: 0;
+}
+
+
+.price {
+  font-weight: 600;
+  color: #212529;
+}

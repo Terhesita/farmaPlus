@@ -1,0 +1,164 @@
+<html>
+    <body>
+        <!----------Menu---------------->
+        <header>
+            <div class="menu">
+                <!--logo-->
+                <a href="#" [routerLink]='[""]'><img src="assets/img/LogoFarmaPlus-C.png" alt="" class="logoFarma"></a>
+                <!--Menu-->
+                <nav  class="menu-category">
+                    <ul><!--1-->
+                    <li>
+                        <a href="#">Medicamentos</a>
+                        <ul><!--2-->
+                        <li><a href="#">Dolor</a> </li>
+                        <li><a href="#">Friebre</a> </li>
+                        <li><a href="#"> gripe</a> </li>
+                        <li><a href="#">estomacal</a> </li>
+                        </ul><!--Fin del 2-->
+                    </li>
+                    <li>
+                        <a href="#">Cuidado Personal</a>
+                        <ul><!--2-->
+                        <li>
+                            <a href="#">Damas <i class='bx bx-chevron-right'></i></a>
+                            <ul><!--3-->
+                            <li><a href="#">Jabón</a></li>
+                            <li><a href="#">Toallas Higienicas</a></li>
+                            <li><a href="#">Tampones</a></li>
+                            </ul><!--Fin 3-->
+                        </li>
+                        <li><a href="#">Caballero</a> </li>
+                        </ul><!--Fin del 2-->
+                    </li>
+                    <li><a href="#" [routerLink]='["Bebes"]'>Bebés</a></li>
+                    <li><a href="#">Vitaminas</a></li>
+                    <li><a href="#">Botiquín</a></li>
+                    <li><a href="#">Salud Sexual</a></li>
+                    <li><a href="#">Alimentos</a></li>
+                    </ul><!--Fin del 1-->
+                </nav>
+                <!--Usuario-->
+                <ul class="navbar_user">
+                    <li class="checkout">
+                    <a href="#">
+                        <i class='bx bxs-user'></i>
+                        
+                    </a>
+                    </li>
+                    <!--favoritos-->
+                    <li class="checkout">
+                    <a href="#">
+                        <i class='bx bxs-heart'></i>
+                        <span id="checkout_items" class="checkout_items">0</span>
+                    </a>
+                    </li>
+                    <!--Usuario-->
+                    <li class="checkout">
+                    <a href="#">
+                        <i class='bx bxs-cart' ></i>
+                        <span id="checkout_items" class="checkout_items">0</span>
+                    </a>
+                    </li>
+                
+                </ul>
+            </div>
+        </header>
+        <section id="features" class="features_area pt-120">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <div class="section_title text-center pb-25">
+                            <h4 class="title wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s">Cuidando tu 
+                                salud y seguridad en cada compra con nosotros.</h4>
+                            <p class="wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.4s">Hasta las puertas de tu casa</p>
+                        </div> 
+                    </div>
+                </div> 
+                <div class="row justify-content-center">
+                    <div class="col-lg-4 col-md-7">
+                        <div class="single_features text-center mt-30 wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s">
+                            <i class='bx bxs-lock-alt'></i>
+                            <h4 class="features_title">Privacidad Integral</h4>
+                            <p>La confidencialidad y debida protección de la información personal</p>
+                        </div> 
+                    </div>
+                    <div class="col-lg-4 col-md-7">
+                        <div class="single_features text-center mt-30 wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.4s">
+                            <i class='bx bx-shield-quarter'></i>
+                            <h4 class="features_title">Transferencias seguras</h4>
+                            <p>Transferirá los Datos necesarios en los casos legalmente previstos</p>
+                        </div> 
+                    </div>
+                    <div class="col-lg-4 col-md-7">
+                        <div class="single_features text-center mt-30 wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.6s">
+                            <i class='bx bxs-mask'></i>
+                            <h4 class="features_title">Limitación de Datos personales</h4>
+                            <p>Solicitud para limitar los datos personales</p>
+                        </div> 
+                    </div>
+                </div> 
+            </div> 
+        </section>
+        <section>
+            <div class="container">
+                <div class="row justify-content-center textos">
+                    <h4 class="features_title">Aviso de privacidad integral</h4>
+                    <p>razón social mejor conocido como Nombre comercial, con domicilio en Domicilio completo 
+                        y portal de internet URL de la página web, es el responsable del uso y protección de 
+                        sus datos personales, y al respecto le informamos lo siguiente:<br><br>
+                    </p>
+                    <h5>¿Para qué fines utilizaremos sus datos personales?</h5>
+                    <p><br> datos personales que recabamos de usted, los utilizaremos para las siguientes finalidades
+                        que son necesarias para el servicio que solicita:<br><br>
+
+                        Respuesta a mensajes del formulario de contacto, Prestación de cualquier servicio solicitado, 
+                        Envío de productos adquiridos en esta tienda en línea
+                    </p>
+                    <h5>¿Qué datos personales utilizaremos para estos fines?</h5>
+                    <p><br> llevar a cabo las finalidades descritas en el presente aviso de privacidad, 
+                        utilizaremos los siguientes datos personales:<br><br>
+
+                        Datos de identificación y contacto, Datos biométricos
+                    </p>
+                    <h5>¿Cómo puede acceder, rectificar o cancelar sus datos personales, u oponerse a su uso 
+                        o ejercer la revocación de consentimiento?</h5>
+                    <p>Usted tiene derecho a conocer qué datos personales tenemos de usted, para qué los utilizamos y las condiciones del uso que les damos (Acceso). Asimismo, es su derecho solicitar la corrección de su información personal en caso de que esté desactualizada, sea inexacta o incompleta (Rectificación); que la eliminemos de nuestros registros o bases de datos cuando considere que la misma no está siendo utilizada adecuadamente (Cancelación); así como oponerse al uso de sus datos personales para fines específicos (Oposición). Estos derechos se conocen como derechos ARCO.
+
+                        Para el ejercicio de cualquiera de los derechos ARCO, debe enviar una petición vía correo electrónico a correo@electronico.com y deberá contener:
+
+                        Nombre completo del titular.
+                        Domicilio.
+                        Teléfono.
+                        Correo electrónico usado en este sitio web.
+                        Copia de una identificación oficial adjunta.
+                        Asunto «Derechos ARCO»
+                        Descripción el objeto del escrito, los cuales pueden ser de manera enunciativa más no limitativa los siguientes: Revocación del consentimiento para tratar sus datos personales; y/o Notificación del uso indebido del tratamiento de sus datos personales; y/o Ejercitar sus Derechos ARCO, con una descripción clara y precisa de los datos a Acceder, Rectificar, Cancelar o bien, Oponerse. En caso de Rectificación de datos personales, deberá indicar la modificación exacta y anexar la documentación soporte; es importante en caso de revocación del consentimiento, que tenga en cuenta que no en todos los casos podremos atender su solicitud o concluir el uso de forma inmediata, ya que es posible que por alguna obligación legal requiramos seguir tratando sus datos personales. Asimismo, usted deberá considerar que para ciertos fines, la revocación de su consentimiento implicará que no le podamos seguir prestando el servicio que nos solicitó, o la conclusión de su relación con nosotros.
+
+                        ¿En cuántos días le daremos respuesta a su solicitud?
+                        5 días
+
+                        d) ¿Por qué medio le comunicaremos la respuesta a su solicitud?
+                        correo@electronico.com</p>
+                </div>
+                <div class="row justify-content-center textos">
+                    <h4 class="features_title">Transferencias</h4>
+                    <p>FarmaPlus para cumplir la(s) finalidad(es) anteriormente descrita(s) u otras aquellas exigidas legalmente o por 
+                        las autoridades competentes, transferirá los Datos necesarios en los casos legalmente previstos, así como aquellos 
+                        vinculados con la relación jurídica entre Usted y San Pablo Farmacia. Los mencionados Datos podrán transferirse a 
+                        cualquier empresa filial y/o subsidiaria o empresa con quien San Pablo Farmacia y Mi Consultorio tenga un vínculo 
+                        comercial, con el objeto de cumplir con las finalidades mencionadas para las cuales se obtuvieron sus Datos 
+                        Personales y Datos Personales Sensibles.</p>
+                </div>
+                <div class="row justify-content-center textos">
+                    <h4 class="features_title">Limitación y/o Divulgación de sus datos personales.</h4>
+                    <p>Usted podrá limitar el uso o divulgación de sus datos personales enviando su solicitud a nuestro Departamento de 
+                        Protección de Datos Personales a la dirección datospersonales@fsanpablo.com Los requisitos para acreditar su 
+                        identidad, así como el procedimiento para atender su solicitud se regirán por los mismos criterios señalados 
+                        en el apartado anterior. En caso de que su solicitud resulte procedente, San Pablo Farmacia lo registrará en 
+                        el listado de exclusión correspondiente.</p>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>

@@ -1,0 +1,90 @@
+<html>
+  <head></head>
+  <header></header>
+  <body>
+    <form class="domicilio" [formGroup]="facturaForm" (ngSubmit)="factura()">
+      <div class="wrapper bg-white my-0">
+        <h4 class="pb-4 border-bottom">Factura</h4>
+          <div class="py-2">
+            <div class="row py-2">
+              <div class="col-md-12">
+                <label class="labels">RFC</label>
+                <input type="text" class="form-control"  value="" formControlName="rfc">
+              </div>
+            </div>
+            <div class="row mt-3">
+              <div class="col-md-6">
+                <label class="labels">Dirección 1</label>
+                <input type="text" class="form-control"  value=""  formControlName="direc_1">
+              </div>
+              <div class="col-md-6">
+                <label class="labels">Dirección 2</label>
+                <input type="text" class="form-control" value=""  formControlName="direc_2">
+              </div>
+            </div>
+            <!--CP-->
+            <div class="row py-2">
+              <div class="col-md-12">
+                <label class="labels">Codígo Postal</label>
+                <input type="text" class="form-control" value="" formControlName="cp">
+              </div>
+            </div>
+            <!----lada-->
+            <div class="row py-2">
+                <div class="col-md-12">
+                  <label for="phone">Lada</label> 
+                  <input type="tel" class="bg-light form-control" formControlName="lada"> 
+                </div>
+              </div>
+            <!--Tel-->
+            <div class="row py-2">
+              <div class="col-md-12">
+                <label for="phone">telefono</label> 
+                <input type="tel" class="bg-light form-control" placeholder="+1 213-548-6015" formControlName="tel"> 
+              </div>
+            </div>
+              <!--select dependencia-->
+              <div class="row py-2">
+                  <div class="col-md-6"> 
+                    <label for="country">Razón Social</label> 
+                    <select name="Dependencia" id="Dependencia" class="bg-light" formControlName="razon_s">
+                      <option value="persona fisica" selected>Persona Física</option>
+                      <option value="persona moral">Persona Moral</option>
+                    </select>
+                  </div>
+              </div>
+              <div class="row py-2">
+                <div class="col-md-12">
+                  <label for="phone">Ciudad</label> 
+                  <input type="tel" class="bg-light form-control" formControlName="ciudad"> 
+                </div>
+              </div>
+              <div class="row py-2">
+                <div class="col-md-12">
+                  <label for="phone">Estado</label> 
+                  <input type="tel" class="bg-light form-control" formControlName="estado"> 
+                </div>
+              </div>
+              <div class="row py-2">
+                <div class="col-md-12">
+                  <label for="phone">Nombre</label> 
+                  <input type="tel" class="bg-light form-control" formControlName="nombre"> 
+                </div>
+              </div>
+              <div class="row py-2">
+                <div class="col-md-12">
+                  <label for="phone">Correo</label> 
+                  <input type="tel" class="bg-light form-control" formControlName="correo"> 
+                </div>
+              </div>
+
+              <!--Botones-->
+              <div class="py-3"> 
+                <button class="btn btn-primary ">Guardar</button> 
+                <button class="btn border button" (click)="cancelar()">Cancelar</button> 
+              </div>
+          </div>
+      </div>
+    </form>
+  </body>
+</html>

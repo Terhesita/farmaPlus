@@ -1,0 +1,5 @@
+{"/api/*":{
+    "target":"https://adonis.farmaplusmx.com",
+    "secure":false,
+    "logLevel":"debug"
+}}

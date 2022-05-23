@@ -1,0 +1,181 @@
+
+
+/*---------------------
+  Featured
+-----------------------*/
+
+.featured {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 80px;
+	padding-bottom: 40px;
+	padding-left: 30px;
+	padding-right: 30px;
+	/*background: #ad4139;*/
+	margin-top: 30px;
+}
+
+.featured__controls {
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.featured__controls ul li {
+	list-style: none;
+	font-size: 18px;
+	color: #1c1c1c;
+	display: inline-block;
+	margin-right: 25px;
+	position: relative;
+	cursor: pointer;
+	/*z-index: -1;*/
+}
+
+.featured__controls ul li.active:after {
+	opacity: 1;
+}
+
+.featured__controls ul li:after {
+	position: absolute;
+	left: 0;
+	bottom: -2px;
+	width: 100%;
+	height: 2px;
+	background: #7fad39;
+	content: "";
+	opacity: 0;
+}
+
+.featured__controls ul li:last-child {
+	margin-right: 0;
+}
+/*carta del producto completa*/
+.featured__item {
+	margin-bottom: 50px;
+	/*background-color: #32c09c;*/
+	width: 280px;
+}
+
+/*div que sube que contiene dentro botn de favorito y compra*/
+.featured__item:hover .featured__item__pic .featured__item__pic__hover {
+	bottom: 70px;
+	/*background-color: #acb963;*/
+}
+
+
+/*tamaño de imagen de cada producto*/
+.featured__item__pic {
+	height: 200px;
+	width: 250px;
+	position: relative;
+	overflow: hidden;
+	background-position: center center;
+	/*background-color: #e7e562;*/
+	/*margin-left: 15px;*/
+	/*z-index: -1;*/
+	padding: 30px;
+}
+
+.featured__item__pic img{
+	width: 80%;
+	margin-left: 15px;
+}
+
+/*todo el div de la lista de los botnes*/
+.featured__item__pic__hover {
+	position: absolute;
+	left: 0;
+	bottom: -72px;
+	width: 100%;
+	height: 55px;
+	text-align: center;
+	-webkit-transition: all, 0.5s;
+	-moz-transition: all, 0.5s;
+	-ms-transition: all, 0.5s;
+	-o-transition: all, 0.5s;
+	transition: all, 0.5s;
+	/*background-color: #7662e7;*/
+	padding-left: 10px;
+}
+
+/*elementos de la lista del boton favorito y compra*/
+.featured__item__pic__hover li {
+	list-style: none;
+	display: inline-block;
+	margin-right: 6px;
+}
+
+/*color al pasar por encima del botn*/
+.featured__item__pic__hover li:hover a {
+	background: #7fad39;
+	border-color: #7fad39;
+}
+
+/*giro del icono*/
+.featured__item__pic__hover li:hover a i {
+	color: #ffffff;
+	transform: rotate(360deg);
+}
+
+/*circulo del boton favorito y carrito*/
+.featured__item__pic__hover li a {
+	padding-top: 5px;
+	font-size: 20px;
+	color: #1c1c1c;
+	height: 50px;
+	width: 50px;
+	line-height: 40px;
+	text-align: center;
+	border: 1px solid #ebebeb;
+	background: #ffffff;
+	display: block;
+	border-radius: 50%;
+	-webkit-transition: all, 0.5s;
+	-moz-transition: all, 0.5s;
+	-ms-transition: all, 0.5s;
+	-o-transition: all, 0.5s;
+	transition: all, 0.5s;
+	/*background-color: #b3f595;*/
+}
+
+/*icono individual*/
+.featured__item__pic__hover li a i {
+	position: relative;
+	transform: rotate(0);
+	-webkit-transition: all, 0.3s;
+	-moz-transition: all, 0.3s;
+	-ms-transition: all, 0.3s;
+	-o-transition: all, 0.3s;
+	transition: all, 0.3s;
+	/*background-color: #e77662;*/
+}
+
+.featured__item__text {
+	text-align: center;
+	padding-top: 15px;
+}
+
+.featured__item__text h5 a {
+	color: #252525;
+	text-decoration: none;
+}
+
+.featured__item__text h6 {
+	margin-bottom: 10px;
+}
+
+.featured__item__text h6 a {
+	color: #252525;
+	text-decoration: none;
+}
+
+.featured__item__text h5 {
+	color: #252525;
+	font-weight: 700;
+}
+
+/*#prod5{
+	height: 150px;
+}*/
+

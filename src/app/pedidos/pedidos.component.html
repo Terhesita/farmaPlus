@@ -1,0 +1,232 @@
+<html>
+    <body>
+        <div class="wrapper">
+            <nav id="sidebar">
+                <div class="sidebar-header">
+                    <a href="" routerLink=""><img src="assets/img/LogoFarmaPlus-C.png" alt=""></a>
+                    <hr>
+                </div>
+                <ul class="list-unstyled components">
+                    <li> 
+                        <button data-toggle="collapse"  class=" button-menu" (click)="miCuenta()">Mis datos</button>
+                    </li>
+                    <li> 
+                        <button data-toggle="collapse"  class=" button-menu" (clcik)="factura()">Facturación</button>
+                    </li>
+                    <li> 
+                        <button data-toggle="collapse"  class=" button-menu" (click)="newcontrasena()">Cambiar Contraseña</button>
+                    </li>
+                </ul>
+                <ul class="list-unstyled CTAs">
+                    <li>
+                        <button class="download">Cerrar Sesión</button> 
+                    </li>
+                </ul>
+            </nav>
+            <div class="content">
+                <nav class="navbar navbar-expand-lg navbar-light"> 
+                    <button type="button" id="sidebarCollapse" class="btn btn-menul"> 
+                        <i class='bx bx-menu'></i> 
+                    </button> 
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> 
+                        <span class="navbar-toggler-icon"></span> 
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Medicamentos
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="#">Alergía</a></li>
+                                    <li><a class="dropdown-item" href="#">Antibiótico</a></li>
+                                    <li><a class="dropdown-item" href="#">Antimicótico</a></li>
+                                    <li><a class="dropdown-item" href="#">Antivirales</a></li>
+                                    <li><a class="dropdown-item" href="#">Contra parásitos</a></li>
+                                    <li><a class="dropdown-item" href="#">Dental</a></li>
+                                    <li><a class="dropdown-item" href="#">Dolor e inflamación</a></li>
+                                    <li><a class="dropdown-item" href="#">Estomacal</a></li>
+                                    <li><a class="dropdown-item" href="#">Relajantes</a></li>
+                                    <li><a class="dropdown-item" href="#">Respiratorio</a></li>
+                                    <li><a class="dropdown-item" href="#">Vigilancia médica</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Aparatos
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="#">Glucosa</a></li>
+                                    <li><a class="dropdown-item" href="#">Presión</a></li>
+                                    <li><a class="dropdown-item" href="#">Respiratorio</a></li>
+                                    <li><a class="dropdown-item" href="#">Temperatura</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item"> <a class="nav-link" href="#">Bebés</a> </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Cuidado personal
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="#">Cosméticos</a></li>
+                                    <li><a class="dropdown-item" href="#">Cuidado de la piel</a></li>
+                                    <li><a class="dropdown-item" href="#">Higiene íntima</a></li>
+                                    <li><a class="dropdown-item" href="#">Jabones</a></li>
+                                    <li><a class="dropdown-item" href="#">Pañuelos</a></li>
+                                    <li><a class="dropdown-item" href="#">Repelente</a></li>
+                                    <li><a class="dropdown-item" href="#">Otros</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Curación
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="#">Acohol, agua oxigenada y antisepticos</a></li>
+                                    <li><a class="dropdown-item" href="#">Algodón</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item"> <a class="nav-link" href="#">Instrumental</a> </li>
+                            <li class="nav-item"> <a class="nav-link" href="#">Salud sexual</a> </li>
+                            <li class="nav-item"> <a class="nav-link" href="#">Vitaminas</a> </li>
+                            <li class="nav-item"> <a class="nav-link" href="#">Otros</a> </li>
+                        </ul>
+                        <!---Iconos-->
+                        <ul class="navbar_user">
+                            <li class="checkout">
+                            <a href="#">
+                                <i class='bx bxs-home'></i>
+                                
+                            </a>
+                            </li>
+                            <!--favoritos-->
+                            <li class="checkout">
+                            <a href="#">
+                                <i class='bx bxs-heart'></i>
+                                <span id="checkout_items" class="checkout_items">0</span>
+                            </a>
+                            </li>
+                            <!--Usuario-->
+                            <li class="checkout">
+                            <a href="#">
+                                <i class='bx bxs-cart' ></i>
+                                <span id="checkout_items" class="checkout_items">0</span>
+                            </a>
+                            </li>
+                        
+                        </ul>
+                    </div>
+                </nav>
+                <div class="content-wrapper">
+                    <app-detalles-pedido id="informacion"></app-detalles-pedido>
+                    <div class="container row justify-content-center">
+                        <h4 class="main-title col-md-7 ps-md-4 col-xs-12 col-sm-6 col-md-8" >Historial</h4>
+                        <div class="row" *ngIf="!info_compras">
+                            <div class="card col-xs-12 col-sm-12  col-md-8 col-lg-6 ">
+                                <div class="card-body">
+                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                        <h4 class="text-center">No tienes ninguna Compra</h4>
+                                    </div>
+                                    <!--<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                        <button class="nuevo-dato">ir al carrito</button>
+                                    </div>-->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card col-xs-12 col-sm-12  col-md-8 col-lg-6" *ngIf="info_compras">
+                            <div class="card-body row card-horizontal" *ngFor="let datos of info_compras">
+                                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 texto">
+                                    <img class="" src="assets/img/pedidos/pedido.png" alt="Card image cap">
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 texto">
+                                    <h4 class="card-title propietario">Pedido #{{datos.Folio}}</h4>
+                                    <p class="card-text">Fecha: {{datos.Fecha.toString().substr(0,10)}}</p>
+                                    <p class="card-text" *ngIf="datos.status==1">Estado: Entregado</p>
+                                    <p class="card-text" *ngIf="datos.status==0">Estado: Pendiente</p>
+                                    <p class="card-text" *ngIf="datos.status==2">Estado: Cancelado</p>
+                                    <p class="card-text" *ngIf="datos.status==3">Estado: En camino</p>
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 row">
+                                    <div class="circulo-entregado" *ngIf="datos.status==1"></div>
+                                    <div class="circulo-pendiente" *ngIf="datos.status==0"></div>
+                                    <div class="circulo-cancelado" *ngIf="datos.status==2"></div>
+                                    <div class="circulo-camino" *ngIf="datos.status==3"></div>
+                                    <button type="button" class="btn-ligth mt-2 ver-detalles"  (click)="getPedidoDetalle(datos.Folio)" onclick="visibilidad('#informacion', true)">
+                                        <i class='bx bx-show-alt'></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-----footer---->
+                <footer>
+                    <div class="footer-todo">
+                    <div class="cuerpo-footer">
+                        <div class="primer-columna">
+                        <div class="row">
+                        <img src="assets/img/LogoFarmaPlus-C.png" alt="" class="logo-footer">
+                        </div>
+                        <div class="redes"><i class='bx bxl-facebook'></i>
+                            <label>Farma Plus</label>
+                        </div>
+                        <div class="redes">
+                            <i class='bx bx-mail-send'></i>
+                            <label>farmaplus.mx@fama</label>
+                        </div>
+                        <div class="redes">
+                            <i class='bx bxl-instagram' ></i>
+                            <label>@farmaplus</label>
+                        </div>
+                        <div class="redes">
+                            <i class='bx bxl-whatsapp' ></i>
+                            <label >+(52)78547854</label>
+                        </div>
+                        <div class="redes">
+                            <img src="assets/img/payment-item.png" class="pago">
+                        </div>
+                        </div>
+                        <div class="segu-columna">
+                            <h1>Atención a Clientes</h1>
+                            <div class="atencion">
+                            <a href="#">Contáctanos</a>
+                            </div>
+                            <div class="atencion">
+                            <a href="#">Localizador de Farmacias</a>
+                            </div>
+                            <div class="atencion">
+                            <a href="#">Facturación</a>
+                            </div>
+                        </div>
+                        <div class="tercer-columna">
+                        <h1>Políticas</h1>
+                        <div class="politicas">
+                            <a href="#">Aviso de Privacidad</a>
+                        </div>
+                        <div class="politicas">
+                            <a href="#">Preguntas Frecuentes</a>
+                        </div>
+                        <div class="politicas">
+                            <a href="#">Términos y condiciones</a>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="contenedor-footer">
+                    <div class="footer-derechos">
+                        <div class="derechos">
+                        ©<a href="#"> Farma Plus | </a> Todos los derechos reservados 2021
+                        </div>
+                        <div class="information-footer">
+                        <a href="#">Atención a Clientes </a>|
+                        <a href="#">Privacidad y Politica </a>| 
+                        <a href="#">Terminos y condiciones </a>
+                        </div>
+                    </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </body>
+</html>
+

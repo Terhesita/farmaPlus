@@ -1,0 +1,78 @@
+<html>
+    <body>
+        <header>
+            <div class="menu">
+                <!--logo-->
+                <a href="#" [routerLink]='[""]'><img src="assets/img/LogoFarmaPlus-C.png" alt="" class="logoFarma"></a>
+                <!--Menu-->
+                <nav  class="menu-category">
+                    <ul><!--1-->
+                    <li>
+                        <a href="#">Medicamentos</a>
+                        <ul><!--2-->
+                        <li><a href="#">Dolor</a> </li>
+                        <li><a href="#">Friebre</a> </li>
+                        <li><a href="#"> gripe</a> </li>
+                        <li><a href="#">estomacal</a> </li>
+                        </ul><!--Fin del 2-->
+                    </li>
+                    <li>
+                        <a href="#">Cuidado Personal</a>
+                        <ul><!--2-->
+                        <li>
+                            <a href="#">Damas <i class='bx bx-chevron-right'></i></a>
+                            <ul><!--3-->
+                            <li><a href="#">Jabón</a></li>
+                            <li><a href="#">Toallas Higienicas</a></li>
+                            <li><a href="#">Tampones</a></li>
+                            </ul><!--Fin 3-->
+                        </li>
+                        <li><a href="#">Caballer</a> </li>
+                        </ul><!--Fin del 2-->
+                    </li>
+                    <li><a href="#" [routerLink]='["Bebes"]'>Bebés</a></li>
+                    <li><a href="#">Vitaminas</a></li>
+                    <li><a href="#">Botiquín</a></li>
+                    <li><a href="#">Salud Sexual</a></li>
+                    <li><a href="#">Alimentos</a></li>
+                    </ul><!--Fin del 1-->
+                </nav>
+                <!--Usuario-->
+                <ul class="navbar_user">
+                    <li class="checkout">
+                      <a href="#">
+                        <i class='bx bxs-user'></i>
+                        
+                      </a>
+                    </li>
+                    <!--favoritos-->
+                    <li class="checkout">
+                      <a href="#">
+                        <i class='bx bxs-heart'></i>
+                        <span id="checkout_items" class="checkout_items">0</span>
+                      </a>
+                    </li>
+                    <!--Usuario-->
+                    <li class="checkout">
+                      <a href="#">
+                        <i class='bx bxs-cart' ></i>
+                        <span id="checkout_items" class="checkout_items">0</span>
+                      </a>
+                    </li>
+                  
+                </ul>
+            </div>
+        </header>
+        <div class="datos">
+            <img src="assets/img/recetaimg.jpg" class="img">
+        </div>
+        <div class="codigo">
+            <div class="search-wrapper">
+                <form>
+                <input type="text" name="focus" required class="search-box" placeholder="Ingrese el código de su receta" />
+                    <button class="close-icon" type="reset"></button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

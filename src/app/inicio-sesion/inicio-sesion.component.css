@@ -1,0 +1,73 @@
+body {
+    background: rgb(129,189,203);
+    background: linear-gradient(90deg, rgba(129,189,203,1) 8%, rgba(38,98,111,0.7819502801120448) 50%, rgba(129,189,203,1) 99%);
+}
+
+.container {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    min-height: 100vh;
+    /*background: #f50057;*/
+}
+
+.card {
+    width: 100%;
+    padding: 30px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.form {
+    padding: 20px
+}
+
+.form-control {
+    height: 50px;
+    background-color: #eee
+}
+
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #0965df;
+    outline: 0;
+    box-shadow: none;
+    background-color: #eee
+}
+
+.inputbox {
+    margin-bottom: 15px
+}
+
+.register {
+    width: 200px;
+    height: 51px;
+    background-color: #0965df;
+    border-color: #0965df;
+}
+
+.register:hover {
+    width: 200px;
+    height: 51px;
+    background-color: #0966df96;
+    border-color: #0966df96;
+}
+
+.login {
+    color: #0965df;
+    text-decoration: none
+}
+
+.login:hover {
+    color: #0966df96;
+    text-decoration: none
+}
+
+.form-check-input:checked {
+    background-color: #0965df;
+    border-color: #0965df;
+}
+
+
+.radio-boton{
+    margin-left: 10%;
+}

@@ -1,0 +1,497 @@
+<html>
+    <head></head>
+    <body>
+        <!--Menu-->
+        <div class="container-fluid px-0">
+            <nav class="navbar navbar-expand-md navbar-light bg-white p-0"> 
+            <button class="navbar-toggler mr-3" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> 
+                <span class="navbar-toggler-icon"></span> 
+            </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="#" [routerLink]='[""]' ><img src="assets/img/LogoFarmaPlus-C.png" alt="" class="logoFarma"></a>
+                        </li>
+                        <li class="nav-item"> 
+                            <a class="nav-link" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><a href="" routerLink="/Medicamentos">Medicamentos</a>
+                            <i class='bx bxs-chevron-down'></i>
+                            </a>
+                            <div class="dropdown-menu" id="dropdown-menu1" aria-labelledby="navbarDropdown1">
+                            <div class="container">
+                                <div class="row">
+                                <div class="col-md-6">
+                                    <div class="row d-flex tab">
+                                    <div class="d-flex flex-column"> 
+                                        <a class="dropdown-item" href="#" routerLink="/Alergias">
+                                        <h6 class="mb-0">Alergía</h6> 
+                                        </a> 
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="row d-flex tab">
+                                    <div class="d-flex flex-column"> 
+                                        <a class="dropdown-item" href="#" routerLink="/Antibiotico">
+                                        <h6 class="mb-0">Antibiótico</h6> 
+                                        </a> 
+                                    </div>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="row">
+                                <div class="col-md-6">
+                                    <div class="row d-flex tab">
+                                    <div class="d-flex flex-column"> 
+                                        <a class="dropdown-item" href="#" routerLink="/Antimicotico">
+                                            <h6 class="mb-0">Antimicótico</h6> 
+                                        </a>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="row d-flex tab">
+                                    <div class="d-flex flex-column"> 
+                                        <a class="dropdown-item" href="#" routerLink="/Antivirales">
+                                        <h6 class="mb-0">Antivirales</h6> 
+                                        </a> 
+                                    </div>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="row">
+                                <div class="col-md-6">
+                                    <div class="row d-flex tab">
+                                    <div class="d-flex flex-column"> 
+                                        <a class="dropdown-item" href="#" routerLink="/Parasitos">
+                                        <h6 class="mb-0">Contra Parásitos</h6> 
+                                        </a> 
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="row d-flex tab">
+                                    <div class="d-flex flex-column"> 
+                                        <a class="dropdown-item" href="#" routerLink="/Dental">
+                                        <h6 class="mb-0">Dental</h6> 
+                                        </a> 
+                                    </div>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="row">
+                                <div class="col-md-6">
+                                    <div class="row d-flex tab">
+                                    <div class="d-flex flex-column"> 
+                                        <a class="dropdown-item" href="#" routerLink="/Inflamacion">
+                                        <h6 class="mb-0">Dolor e inflamación</h6> 
+                                        </a> 
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="row d-flex tab">
+                                    <div class="d-flex flex-column"> 
+                                        <a class="dropdown-item" href="#" routerLink="/Estomacal">
+                                        <h6 class="mb-0">Estomacal</h6> 
+                                        </a> 
+                                    </div>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                      <div class="row d-flex tab">
+                                        <div class="d-flex flex-column"> 
+                                          <a class="dropdown-item" href="#"  routerLink="/Relajante">
+                                            <h6 class="mb-0">Relajantes</h6> 
+                                          </a> 
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                      <div class="row d-flex tab">
+                                        <div class="d-flex flex-column"> 
+                                          <a class="dropdown-item" href="#" routerLink="/Vigilancia">
+                                            <h6 class="mb-0">Vigilancia médica</h6> 
+                                          </a> 
+                                        </div>
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                      <div class="row d-flex tab">
+                                        <div class="d-flex flex-column"> 
+                                          <a class="dropdown-item" href="#" routerLink="/Respiratorio">
+                                            <h6 class="mb-0">Respiratorias</h6> 
+                                          </a> 
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                            </div>
+                            </div>
+                        </li>
+                        <li class="nav-item"> 
+                            <a class="nav-link" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><a href="" routerLink="/Aparatos">Aparatos</a> 
+                            <i class='bx bxs-chevron-down'></i>
+                            </a>
+                            <div class="dropdown-menu" id="dropdown-menu2" aria-labelledby="navbarDropdown2">
+                            <div class="container">
+                                <div class="row">
+                                <div class="col-md-6">
+                                    <div class="row d-flex tab">
+                                    <div class="d-flex flex-column"> 
+                                        <a class="dropdown-item" href="#" routerLink="/Glucosa">
+                                        <h6 class="mb-0">Glucosa</h6> 
+                                        </a> 
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="row d-flex tab">
+                                    <div class="d-flex flex-column"> 
+                                        <a class="dropdown-item" href="#" routerLink="/Presion">
+                                        <h6 class="mb-0">Presión</h6> 
+                                        </a> 
+                                    </div>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="row">
+                                <div class="col-md-6">
+                                    <div class="row d-flex tab">
+                                    <div class="d-flex flex-column"> 
+                                        <a class="dropdown-item" href="#" routerLink="/Aparato-Respiratorio">
+                                        <h6 class="mb-0">Respiratorio</h6> 
+                                        </a> 
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="row d-flex tab">
+                                    <div class="d-flex flex-column"> 
+                                        <a class="dropdown-item" href="#" routerLink="/Temperatura">
+                                        <h6 class="mb-0">Temperatura</h6> 
+                                        </a> 
+                                    </div>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><a href="" routerLink="/Bebes">Bebés</a> 
+                            </a>
+                        </li>
+                        <li class="nav-item"> 
+                            <a class="nav-link" href="#" id="navbarDropdown10" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><a routerLink="/Cuidado-personal">Cuidado personal</a>
+                            <i class='bx bxs-chevron-down'></i>
+                            </a>
+                            <div class="dropdown-menu" id="dropdown-menu10" aria-labelledby="navbarDropdown10">
+                            <div class="container">
+                                <div class="row">
+                                <div class="col-md-6">
+                                    <div class="row d-flex tab">
+                                    <div class="d-flex flex-column"> 
+                                        <a class="dropdown-item" href="#" routerLink="/Cosmeticos">
+                                        <h6 class="mb-0">Cosméticos</h6> 
+                                        </a> 
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="row d-flex tab">
+                                    <div class="d-flex flex-column"> 
+                                        <a class="dropdown-item" href="#" routerLink="/Cuidado-Piel">
+                                        <h6 class="mb-0">Cuidado de piel</h6> 
+                                        </a> 
+                                    </div>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="row">
+                                <div class="col-md-6">
+                                    <div class="row d-flex tab">
+                                    <div class="d-flex flex-column"> 
+                                        <a class="dropdown-item" href="#" routerLink="/Higiene-Intima">
+                                        <h6 class="mb-0">Higiene íntima</h6> 
+                                        </a> 
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="row d-flex tab">
+                                    <div class="d-flex flex-column"> 
+                                        <a class="dropdown-item" href="#" routerLink="/Jabones">
+                                        <h6 class="mb-0">Jabones</h6> 
+                                        </a> 
+                                    </div>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="row">
+                                <div class="col-md-6">
+                                    <div class="row d-flex tab">
+                                    <div class="d-flex flex-column"> 
+                                        <a class="dropdown-item" href="#" routerLink="/Panuelos">
+                                        <h6 class="mb-0">Pañuelos</h6> 
+                                        </a> 
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="row d-flex tab">
+                                    <div class="d-flex flex-column"> 
+                                        <a class="dropdown-item" href="#" routerLink="/Repelente">
+                                        <h6 class="mb-0">Repelente</h6> 
+                                        </a> 
+                                    </div>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="row">
+                                <div class="col-md-12">
+                                    <div class="row d-flex tab">
+                                    <div class="d-flex flex-column"> 
+                                        <a class="dropdown-item" href="#" routerLink="/Otros">
+                                        <h6 class="mb-0">Otros</h6> 
+                                        </a> 
+                                    </div>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" id="navbarDropdown4" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><a routerLink="/Curacion">Curación</a>
+                            <i class='bx bxs-chevron-down'></i>
+                            </a>
+                            <div class="dropdown-menu" id="dropdown-menu4" aria-labelledby="navbarDropdown4">
+                            <div class="container">
+                                <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="row d-flex tab">
+                                    <div class="d-flex flex-column"> 
+                                        <a class="dropdown-item" href="#" routerLink="/Alcohol">
+                                        <h6 class="mb-0">Alcohol, agua oxigenada y antisepticos</h6> 
+                                        </a> 
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="row d-flex tab">
+                                    <div class="d-flex flex-column"> 
+                                        <a class="dropdown-item" href="#" routerLink="/Algodon">
+                                        <h6 class="mb-0">Algodón</h6> 
+                                        </a> 
+                                    </div>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" id="navbarDropdown5" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" routerLink="/Instrumental">Instrumental
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" id="navbarDropdown6" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" routerLink="/Salud-sexual">Salud sexual
+                            </a>
+                        </li>
+                        <li  class="nav-item">
+                            <a class="nav-link" href="#" id="navbarDropdown7" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" routerLink="/Vitaminas">Vitaminas
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" id="navbarDropdown8" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" routerLink="/Otros-productos">Otros
+                            </a>
+                        </li>
+                        <!--Con cuenta-->
+                        <ul class="navbar_user" *ngIf="cuentaIniciada">
+                            <!--Usuario-->
+                            <li class="checkout">
+                              <a href="/Mi-Cuenta" *ngIf="cuenta == false">
+                                <i class='bx bxs-user'></i>
+                              </a>
+                            </li>
+                            <!--favoritos-->
+                            <li class="checkout">
+                              <a href="#" [routerLink]='["Favoritos"]'>
+                                <i class='bx bxs-heart'></i>
+                                <span id="checkout_items" class="checkout_items">x</span>
+                              </a>
+                            </li>
+                            <!--Carrito-->
+                            <li class="checkout">
+                              <a href="#" [routerLink]='["Compra"]'>
+                                <i class='bx bxs-cart' ></i>
+                                <span id="checkout_items" class="checkout_items">x</span>
+                              </a>
+                            </li>
+                        </ul>
+                        <!--Sin cuenta-->
+                        <ul class="navbar_user" *ngIf="sinCuenta">
+                            <li class="checkout">
+                              <a href="#" [routerLink]='["Sesion"]'>
+                                <i class='bx bxs-user'></i>
+                              </a>
+                            </li>
+                            <!--favoritos-->
+                            <li class="checkout">
+                              <a href="#" [routerLink]='["Favoritos"]'>
+                                <i class='bx bxs-heart'></i>
+                                <span id="checkout_items" class="checkout_items">x</span>
+                              </a>
+                            </li>
+                            <!--Carrito-->
+                            <li class="checkout">
+                              <a href="#" [routerLink]='["Compra"]'>
+                                <i class='bx bxs-cart' ></i>
+                                <span id="checkout_items" class="checkout_items">x</span>
+                              </a>
+                            </li>
+                        </ul>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <!--Productos--> 
+        <div class="productos">
+            <section class="section-content padding-y">
+                <div class="container-product">
+                    <div class="row">
+                        <main class="col-md-9">
+                            <!--No. de productos y filtros-->
+                            <header class="border-bottom mb-4 pb-3">
+                                <div class="form-inline">
+                                    <span class="mr-md-auto">1 - 8 de 20 Productos</span>
+                                    <select class="mr-2 form-control relevancia">
+                                        <option>Relevancia  ▼</option>
+                                        <option>Marcas</option>
+                                        <option>Nombre</option>
+                                        <option>Precio (menor)</option>
+                                    </select>
+                                </div>
+                            </header><!-- sect-heading -->
+                            <!--Cartas de Productos-->
+                            <div class="row">
+                                <!--Primer productos-->
+                                <div class="col-md-4" *ngFor='let datos of favoritosProd[0] | paginate: { itemsPerPage: item, currentPage: page }'>
+                                    <figure class="card card-product-grid">
+                                        <div class="img-producto"> 
+                                            <span class="badge badge-danger"> Oferta</span>
+                                            <!--<span class="fav" *ngIf="detalle_fav != datos.Clave"><i class='bx bxs-heart n-fav'></i></span>-->
+                                            <a (click)="getProductoDetalle(datos.Clave)"><img src="{{datos.Url_imagen}}" onerror="this.src='https://farmaplusmx.com/ImgOtras/logocorreo.png'" ></a>
+                                        </div> <!-- img-wrap.// -->
+                                        <figcaption class="info-wrap">
+                                            <div class="fix-height">
+                                                <a href="/Bebes/leche-nan"  class="title" >{{datos.Nombre}}</a>
+                                                <div class="price-wrap mt-2">
+                                                    <span class="price">${{datos.PrecioV}}</span>
+                                                </div> <!-- price-wrap.// -->
+                                            </div>
+                                            <div class="row">
+                                                <button href="#" class="btn btn-fav col-lg-5"><i class='bx bxs-cart-alt'></i></button>
+                                                <button href="#" class="btn btn-fav  col-lg-5 offset-md-2" (click)="deleteFav(datos.Clave)"><i class='bx bxs-heart s-fav'></i></button>
+                                            </div>
+                                        </figcaption>
+                                    </figure>
+                                </div> <!-- col.// -->
+                            </div><!--Fin de los productos-->
+
+                            <nav class="mt-4" aria-label="Page navigation sample">
+                                <ul class="pagination">
+                                    <pagination-controls (pageChange)="page = $event" previousLabel="Anterior" nextLabel="Siguiente" class="page-item active "></pagination-controls>
+                                </ul>
+                            </nav>
+                            <div class="cant-productos">
+                                <p>No. de Productos:</p>
+                                <div class="" > 
+                                    <select id="productos" [(ngModel)]="item" (ngModelChange)="cambioPaginacion()">
+                                        <option value="25" selected>25</option>
+                                        <option value="30" >30</option>
+                                        <option value="60">60</option>
+                                        <option value="70">70</option>
+                                    </select> 
+                                </div>
+                            </div>
+                        </main>
+                    </div>
+                </div>
+            </section>
+        </div>  
+        <!--Pruebas-->
+        <!-----footer---->
+        <footer>
+            <div class="footer-todo">
+            <div class="cuerpo-footer">
+                <div class="primer-columna">
+                <div class="row">
+                <img src="assets/img/LogoFarmaPlus-C.png" alt="" class="logo-footer">
+                </div>
+                <div class="redes"><i class='bx bxl-facebook'></i>
+                    <label>Farma Plus</label>
+                </div>
+                <div class="redes">
+                    <i class='bx bx-mail-send'></i>
+                    <label>farmaplus.mx@fama</label>
+                </div>
+                <div class="redes">
+                    <i class='bx bxl-instagram' ></i>
+                    <label>@farmaplus</label>
+                </div>
+                <div class="redes">
+                    <i class='bx bxl-whatsapp' ></i>
+                    <label >+(52)78547854</label>
+                </div>
+                <div class="redes">
+                    <img src="assets/img/payment-item.png" class="pago">
+                </div>
+                </div>
+                <div class="segu-columna">
+                    <h1>Atención a Clientes</h1>
+                    <div class="atencion">
+                    <a href="#">Contáctanos</a>
+                    </div>
+                    <div class="atencion">
+                    <a href="#">Localizador de Farmacias</a>
+                    </div>
+                    <div class="atencion">
+                    <a href="#">Facturación</a>
+                    </div>
+                </div>
+                <div class="tercer-columna">
+                <h1>Políticas</h1>
+                <div class="politicas">
+                    <a href="#">Aviso de Privacidad</a>
+                </div>
+                <div class="politicas">
+                    <a href="#">Preguntas Frecuentes</a>
+                </div>
+                <div class="politicas">
+                    <a href="#">Términos y condiciones</a>
+                </div>
+                </div>
+            </div>
+            </div>
+            <div class="contenedor-footer">
+            <div class="footer">
+                <div class="copyright">
+                ©<a href="#"> Farma Plus | </a> Todos los derechos reservados 2021
+                </div>
+                <div class="information-footer">
+                <a href="#">Atención a Clientes </a>|
+                <a href="#">Privacidad y Politica </a>| 
+                <a href="#">Terminos y condiciones </a>
+                </div>
+            </div>
+            </div>
+        </footer>
+    </body>
+</html>
+
+<router-outlet></router-outlet>

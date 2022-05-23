@@ -1,0 +1,591 @@
+<html>
+  <body>
+    <!----------Menu---------------->
+    <header>
+        <div class="menu">
+            <!--logo-->
+            <a href="#" [routerLink]='[""]'><img src="assets/img/LogoFarmaPlus-C.png" alt="" class="logoFarma"></a>
+            <!--Menu-->
+            <nav  class="menu-category">
+                <ul><!--1-->
+                <li>
+                    <a href="#">Medicamentos</a>
+                    <ul><!--2-->
+                    <li><a href="#">Dolor</a> </li>
+                    <li><a href="#">Friebre</a> </li>
+                    <li><a href="#"> gripe</a> </li>
+                    <li><a href="#">estomacal</a> </li>
+                    </ul><!--Fin del 2-->
+                </li>
+                <li>
+                    <a href="#">Cuidado Personal</a>
+                    <ul><!--2-->
+                    <li>
+                        <a href="#">Damas <i class='bx bx-chevron-right'></i></a>
+                        <ul><!--3-->
+                        <li><a href="#">Jabón</a></li>
+                        <li><a href="#">Toallas Higienicas</a></li>
+                        <li><a href="#">Tampones</a></li>
+                        </ul><!--Fin 3-->
+                    </li>
+                    <li><a href="#">Caballero</a> </li>
+                    </ul><!--Fin del 2-->
+                </li>
+                <li><a href="#" [routerLink]='["Bebes"]'>Bebés</a></li>
+                <li><a href="#">Vitaminas</a></li>
+                <li><a href="#">Botiquín</a></li>
+                <li><a href="#">Salud Sexual</a></li>
+                <li><a href="#">Alimentos</a></li>
+                </ul><!--Fin del 1-->
+            </nav>
+            <!--Usuario-->
+            <ul class="navbar_user">
+                <li class="checkout">
+                  <a href="#">
+                    <i class='bx bxs-user'></i>
+                    
+                  </a>
+                </li>
+                <!--favoritos-->
+                <li class="checkout">
+                  <a href="#">
+                    <i class='bx bxs-heart'></i>
+                    <span id="checkout_items" class="checkout_items">0</span>
+                  </a>
+                </li>
+                <!--Usuario-->
+                <li class="checkout">
+                  <a href="#">
+                    <i class='bx bxs-cart' ></i>
+                    <span id="checkout_items" class="checkout_items">0</span>
+                  </a>
+                </li>
+              
+            </ul>
+        </div>
+    </header>
+    <!-- Encabezado de pestañas -->
+    <div class="breadcrumbs-Cart">
+      <div class="container-Cart">
+        <div class="row">
+          <div class="col-12">
+            <div class="bread-inner">
+              <ul class="bread-list">
+                <li><a href="#">Inicio<i class='bx bx-chevron-right'></i></a></li>
+                <li class="active"><a href="#">Carrito</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Fin del encabezado -->
+    <!-- ========================= Compras========================= -->
+    <section class="section-content ">
+      <div class="container-Cart">
+        <div class="row">
+          <main class="col-md-9">
+            <div class="card">
+              <div class="shopping-cart section">
+                <div class="container-Cart">
+                  <div class="row">
+                    <div class="col-12">
+                      <!-- Shopping Summery -->
+                      <table class="table shopping-summery">
+                        <thead>
+                          <tr class="main-hading">
+                            <th>Producto</th>
+                            <th>Detalles</th>
+                            <th class="text-center">Precio</th>
+                            <th class="text-center">Cantidad</th>
+                            <th class="text-center">Total</th> 
+                            <th class="text-center"><i class='bx bx-trash' ></i></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="image" data-title="No"><img src="https://assets2.farmaciasanpablo.com.mx/uploads-prod/productimages/Fsp480Wx480H_6270037_1f4dsham0" alt="#"></td>
+                            <td class="product-des" data-title="Description">
+                              <p class="product-name"><a href="#">NAN Expert Pro ha</a></p>
+                              <p class="product-des">Personalizada 800g</p>
+                            </td>
+                            <td class="price" data-title="Price"><span>$110.00 </span></td>
+                            <td class="qty" data-title="Qty"><!-- Input Order -->
+                              <div class="input-group">
+                                <!-- skin 7 -->
+                                <div class="num-block skin-7">
+                                    <div class="num-in">
+                                      <span class="minus dis">-</span>
+                                      <input type="text" class="in-num" value="1" readonly="">
+                                      <span class="plus">+</span>
+                                    </div>
+                                </div>
+                                <!-- / skin 7 -->
+                              </div>
+                            <!--/ End Input Order -->
+                            </td>
+                            <td class="total-amount" data-title="Total"><span>$220.88</span></td>
+                            <td class="action" data-title="Remove"><a href="#"><i class='bx bx-trash' ></i></a></td>
+                          </tr>
+                          <tr>
+                            <td class="image" data-title="No"><img src="https://assets2.farmaciasanpablo.com.mx/uploads-prod/productimages/Fsp800Wx800H_2620622_1f34m5lhh" alt="#"></td>
+                            <td class="product-des" data-title="Description">
+                              <p class="product-name"><a href="#">Kleen Bebé Etapa 4</a></p>
+                              <p class="product-des">40 pañales, grande.</p>
+                            </td>
+                            <td class="price" data-title="Price"><span>$110.00 </span></td>
+                            <td class="qty" data-title="Qty"><!-- Input Order -->
+                              <div class="input-group">
+                                <!-- skin 7 -->
+                                <div class="num-block skin-7">
+                                  <div class="num-in">
+                                  <span class="minus dis">-</span>
+                                  <input type="text" class="in-num" value="1" readonly="">
+                                  <span class="plus">+</span>
+                                  </div>
+                                </div>
+                                <!-- / skin 7 -->
+                              </div>
+                              <!--/ End Input Order -->
+                            </td>
+                            <td class="total-amount" data-title="Total"><span>$220.88</span></td>
+                            <td class="action" data-title="Remove"><a href="#"><i class='bx bx-trash' ></i></a></td>
+                          </tr>
+                          <tr>
+                            <td class="image" data-title="No"><img src="https://farmaciasflemingbuap.com/pub/media/catalog/product/cache/c687aa7517cf01e65c009f6943c2b1e9/7/1/711d1aec6ed8184b16572240efe4195d_1.jpeg" alt="#"></td>
+                            <td class="product-des" data-title="Description">
+                              <p class="product-name"><a href="#">Pomada de la campana</a></p>
+                              <p class="product-des">Tarro 35g.</p>
+                            </td>
+                            <td class="price" data-title="Price"><span>$110.00 </span></td>
+                            <td class="qty" data-title="Qty"><!-- Input Order -->
+                              <div class="input-group">
+                                <!-- skin 7 -->
+                                <div class="num-block skin-7">
+                                  <div class="num-in">
+                                    <span class="minus dis">-</span>
+                                    <input type="text" class="in-num" value="1" readonly="">
+                                    <span class="plus">+</span>
+                                  </div>
+                                </div>
+                                <!-- / skin 7 -->
+                              </div>
+                              <!--/ End Input Order -->
+                            </td>
+                            <td class="total-amount" data-title="Total"><span>$220.88</span></td>
+                            <td class="action" data-title="Remove"><a href="#"><i class='bx bx-trash' ></i></a></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    <!--/ End Shopping Summery -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body border-top">
+                  <button class="btn btn-primary float-md-right" onclick="mostrar();"> Comprar <i class='bx bxs-cart-alt'></i> </button>
+                  <button class="btn btn-light"> <i class='bx bx-arrow-back' ></i> Continuar Comprando </button>
+              </div>  
+            </div> <!-- card.// -->
+            <div class="alert alert-success mt-3">
+                <p class="icontext"><i class='bx bxs-error-circle'></i> Free Delivery within 1-2 weeks</p>
+            </div>
+          </main> <!-- col.// -->
+          <aside class="col-md-3">
+              <div class="card mb-3">
+                  <div class="card-body">
+                  <form>
+                      <div class="form-group">
+                          <label>Have coupon?</label>
+                          <div class="input-group">
+                              <input type="text" class="form-control" name="" placeholder="Coupon code">
+                              <span class="input-group-append"> 
+                                  <button class="btn btn-primary">Apply</button>
+                              </span>
+                          </div>
+                      </div>
+                  </form>
+                  </div> <!-- card-body.// -->
+              </div>  <!-- card .// -->
+              <div class="card">
+                  <div class="card-body">
+                          <dl class="dlist-align">
+                            <dt>Total price:</dt>
+                            <dd class="text-right">$568</dd>
+                          </dl>
+                          <dl class="dlist-align">
+                            <dt>Discount:</dt>
+                            <dd class="text-right">$658</dd>
+                          </dl>
+                          <dl class="dlist-align">
+                            <dt>Total:</dt>
+                            <dd class="text-right  h5"><strong>$1,650</strong></dd>
+                          </dl>
+                          <hr>
+                          <p class="text-center mb-3">
+                              <img src="assets/img/Cart/payments.png" height="26">
+                          </p>
+                          
+                  </div> <!-- card-body.// -->
+              </div>  <!-- card .// -->
+          </aside> <!-- col.// -->
+        </div>
+      </div> <!-- container-Cart .//  -->
+    </section>
+    <!-- ========================= Fin compras========================= -->
+
+    <!--Envio y forma de pago-->
+    <div class="container" id="mostrar">
+        <main class="col-md-9"> 
+          <!--Tipo de entrega-->
+          <article class="card mb-4">
+            <div class="card-body">
+              <h4 class="card-title mb-4">Información de Entrega</h4>
+              <form action="">
+                <div class="row">
+                  <div class="form-group col-sm-6">
+                    <label class="js-check box active">
+                    <input type="radio" name="dostavka" value="option1" checked="">
+                    <h6 class="title">Envío</h6>
+                    <p class="text-muted">El envío sera por medio de DHL en 24 horas recibe</p>
+                    </label> <!-- js-check.// -->
+                  </div>
+                  <div class="form-group col-sm-6">
+                    <label class="js-check box">
+                      <input type="radio" name="dostavka" value="option1">
+                      <h6 class="title">Entrega en sucursal más cercana</h6>
+                      <p class="text-muted">Ubica la sucursal más cerca de ti y entregamos tu pedido</p>
+                    </label> <!-- js-check.// -->
+                  </div>
+                </div> <!-- row.// -->
+              </form>
+            </div> <!-- card-body.// -->
+          </article> <!-- card.// -->
+          <!--Domiciolio-->
+          <div class="card mb-4">
+            <div class="card-body">
+              <h4 class="card-title mb-4">Domicilio</h4>
+              <a href="#" class="domicilio">
+                <div class="card">
+                  <div class="card-body">
+                    <p class="text-muted">Domicilio 1</p>
+                    <p class="ubicacion">
+                        Calle Las Flores <br>
+                        no. Interior: 23 no.Exterior:125 <br>
+                        C.P: 13148<br>
+                        Télefono:831394335<br>
+                        Dependencia: Casa<br>
+                        Detalles: Frente a Tortillería
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <button type="button" class="btn btn-primary" (click)="domicilio()">+ agregar Domicilio</button>
+          </div>
+          <!--Aquí inicia lo de forma de pago-->
+        </main> <!-- col.// -->
+        <section class="section-content ">
+          <div class="container-Cart">
+            <div class="row">
+              <main class="col-md-9">
+                          <!--Forma de pago-->
+                          <h4 class="card-title mb-4">Forma de Pago</h4>
+                          <article class="accordion" id="accordion_pay">
+                            <!--Primer metodo de pago-->
+                            <div class="card">
+                              <header class="card-header">
+                                <img src="assets/img/Cart/payment-card.png" class="float-right" height="24">  
+                                <label class="form-check" data-toggle="collapse" data-target="#pay_payme">
+                                    <input class="form-check-input" name="payment-option" type="radio" value="option2">
+                                    <h6 class="form-check-label"> Tarjeta de crédito/débito</h6>
+                                </label>
+                              </header>
+                              <div id="pay_payme" class="collapse" data-parent="#accordion_pay">
+                                  <div class="card-body">
+                                    <div class="card-horizontal">
+                                      <div class="img-square-wrapper">
+                                        <img class="" src="https://media.glassdoor.com/sqll/8236/banorte-squarelogo-1595264871451.png" alt="Card image cap">
+                                      </div>
+                                      <div class="card-body">
+                                        <h4 class="card-title propietario">Christian Acosta</h4>
+                                        <p class="card-text">Banorte</p>
+                                        <p class="card-text">xxxx-xxxx-xxxx-xxxx</p>
+                                      </div>
+                                    </div>
+                                    <div class="card-horizontal">
+                                      <div class="img-square-wrapper">
+                                        <img class="" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfYQt8oa6X6sed2_EfOeC67e5ZkUSdpRyQsksa8M4Z90_qMkF5mqD5wtan3gjC0_FWS6g&usqp=CAU" alt="Card image cap">
+                                      </div>
+                                      <div class="card-body">
+                                        <h4 class="card-title propietario">Diego Alvarado</h4>
+                                        <p class="card-text">Scotiabank</p>
+                                        <p class="card-text">xxxx-xxxx-xxxx-xxxx</p>
+                                      </div>
+                                    </div>
+                                  </div> <!-- card body .// -->
+                                  <button type="button" class="btn btn-primary float-md-right" (click)="tarjeta()">+ agregar Tarjeta</button>
+                              </div> <!-- collapse .// -->
+                            </div> <!-- card.// -->
+                            <!--Segundo metodo de pago-->
+                            <div class="card">
+                                <header class="card-header">
+                                    <img src="assets/img/Cart/payment-bank.png" class="float-right" height="24">  
+                                    <label class="form-check" data-toggle="collapse" data-target="#pay_card">
+                                        <input class="form-check-input" name="payment-option" type="radio" value="option1">
+                                        <h6 class="form-check-label"> Bank Transfer </h6>
+                                    </label>
+                                </header>
+                                <div id="pay_card" class="collapse" data-parent="#accordion_pay">
+                                    <div class="card-body">
+                                        <p class="text-muted">Some instructions about how to pay </p>
+                                        <p>
+                                            Bank of America, Account number: 12345678912346 <br>
+                                            IBAN: 12345, SWIFT: 987654
+                                        </p>
+                                    </div> <!-- card body .// -->
+                                </div> <!-- collapse .// -->
+                            </div> <!-- card.// -->
+                          </article> 
+                          <!-- accordion end.// -->
+              </main> <!-- col.// -->
+              <aside class="col-md-3">
+                  <div class="card">
+                      <div class="card-body">
+                              <dl class="dlist-align">
+                                <dt>Total price:</dt>
+                                <dd class="text-right">$568</dd>
+                              </dl>
+                              <dl class="dlist-align">
+                                <dt>Discount:</dt>
+                                <dd class="text-right">$658</dd>
+                              </dl>
+                              <dl class="dlist-align">
+                                <dt>Total:</dt>
+                                <dd class="text-right  h5"><strong>$1,650</strong></dd>
+                              </dl>
+                              <hr>
+                              <p class="text-center mb-3">
+                                  <img src="assets/img/Cart/payments.png" height="26">
+                              </p>
+                              <button class="btn btn-danger float-md-right" onclick="ocultar();">Cancelar</button>
+                      </div> <!-- card-body.// -->
+                  </div>  <!-- card .// -->
+              </aside> <!-- col.// -->
+            </div>
+          </div> <!-- container-Cart .//  -->
+        </section>
+    </div> <!-- container .//  -->
+    
+    
+    
+    
+    
+    <!-------------------------->
+
+    <!----------------------Carrusel-------------------------->
+    <section class="carrousel">
+      <svg aria-hidden="true" style="display:none" xmlns="http://www.w3.org/2000/svg">
+    
+        <symbol id="icon-left-arrow" viewBox="0 0 29 46" version="1.1" >
+            <g transform="translate(-42 -1615)" stroke="#3A3443" stroke-width="4" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+              <polyline transform="translate(56.5 1638) rotate(-90) translate(-56.5 -1638)" points="36 1650 56.5 1626 67.581 1639 77 1650"/>
+            </g>
+        </symbol>
+    
+        <symbol id="icon-right-arrow" viewBox="0 0 29 46" version="1.1" >
+            <g transform="translate(-1349.000000, -1615.000000)" stroke="#3A3443" stroke-width="4" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+                <polyline id="Path-Copy" transform="translate(1363.500000, 1638.000000) scale(-1, 1) rotate(-90.000000) translate(-1363.500000, -1638.000000) " points="1343 1650 1363.5 1626 1384 1650"></polyline>
+            </g>
+        </symbol>
+      </svg>
+      <div class="sliderWrapper leftLocked">
+        <div class="slider">
+          <div class="listeLien">
+            <a class="lien" href="#">
+              <img src="https://via.placeholder.com/230x300">
+              <h2 class="lien__titre">titre 1 Lorem ipsum dolor sitelit. Impedit molestias,</h2>
+            </a>
+            <a class="lien" href="#">
+              <img src="https://via.placeholder.com/230x300">
+              <h2 class="lien__titre">titre 2 Lorem ipsum dolor sit amet, consectetur elit. Saepe id,</h2>
+            </a>
+            <a class="lien" href="#">
+              <img src="https://via.placeholder.com/230x300">
+              <h2 class="lien__titre">titre 3 Lorem ipsum dolor sit amet, consectetur elit. Nihil excepturi,</h2>
+            </a>
+            <a class="lien" href="#">
+              <img src="https://via.placeholder.com/230x300">
+              <h2 class="lien__titre">titre 4 Lorem ipsum dolor sit amet, consectetur elit. Fuga excepturi,</h2>
+            </a>
+            <a class="lien" href="#">
+              <img src="https://via.placeholder.com/230x300">
+              <h2 class="lien__titre">titre 5 Lorem ipsum dolor sit amet, consectetur adipisicing. Amet perspiciatis pariatur</h2>
+            </a>
+            <a class="lien" href="#">
+              <img src="https://via.placeholder.com/230x300">
+              <h2 class="lien__titre">titre 6 Lorem ipsum dolor sit amet, consectetur adipisicing. Omnis quibusdam non</h2>
+            </a>
+            <a class="lien" href="#">
+              <img src="https://via.placeholder.com/230x300">
+              <h2 class="lien__titre">titre 4 Lorem ipsum dolor sit amet, consectetur elit. Fuga excepturi,</h2>
+            </a>
+            <a class="lien" href="#">
+              <img src="https://via.placeholder.com/230x300">
+              <h2 class="lien__titre">titre 5 Lorem ipsum dolor sit amet, consectetur adipisicing. Amet perspiciatis pariatur</h2>
+            </a>
+            <a class="lien" href="#">
+              <img src="https://via.placeholder.com/230x300">
+              <h2 class="lien__titre">titre 6 Lorem ipsum dolor sit amet, consectetur adipisicing. Omnis quibusdam non</h2>
+            </a>
+          </div>
+        </div>
+        <div class="navSlider navSliderLeft disabled">
+          <svg aria-hidden="true"><use xlink:href="#icon-left-arrow"></use></svg>
+        </div>
+        <div class="navSlider navSliderRight">
+          <svg aria-hidden="true"><use xlink:href="#icon-right-arrow"></use></svg>
+        </div>
+      </div>
+      
+      <div class="sliderMarks">
+      </div>
+      
+    
+    </section>
+    <!---------------------Fin carrusel----------------------->
+    
+    
+    <!-- ========================= Politicas  ========================= -->
+    <section class="section-name bg ">
+    <div class="container-Cart">
+    <h6>Payment and refund policy</h6>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    
+    </div><!-- container-Cart // -->
+    </section>
+    <!-- ========================= Fin de las politicas ========================= -->
+
+      <!-- 4 caracteristicas -->
+      <section class="shop-services section">
+        <div class="container-Cart">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 col-12">
+              <!-- Start Single Service -->
+              <div class="single-service">
+                <i class='bx bxs-offer' ></i>
+                <h4>Free shiping</h4>
+                <p>Orders over $100</p>
+              </div>
+              <!-- End Single Service -->
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+              <!-- Start Single Service -->
+              <div class="single-service">
+                <i class='bx bxs-shopping-bag-alt' ></i>
+                <h4>Free Return</h4>
+                <p>Within 30 days returns</p>
+              </div>
+              <!-- End Single Service -->
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+              <!-- Start Single Service -->
+              <div class="single-service">
+                <i class='bx bx-basket' ></i>
+                <h4>Sucure Payment</h4>
+                <p>100% secure payment</p>
+              </div>
+              <!-- End Single Service -->
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+              <!-- Start Single Service -->
+              <div class="single-service">
+                <i class='bx bx-purchase-tag-alt'></i>
+                <h4>Best Peice</h4>
+                <p>Guaranteed price</p>
+              </div>
+              <!-- End Single Service -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <!-----footer---->
+    <footer>
+      <div class="footer-todo">
+        <div class="cuerpo-footer">
+          <div class="primer-columna">
+            <div class="row">
+            <img src="assets/img/LogoFarmaPlus-C.png" alt="" class="logo-footer">
+            </div>
+            <div class="redes"><i class='bx bxl-facebook'></i>
+              <label>Farma Plus</label>
+            </div>
+            <div class="redes">
+              <i class='bx bx-mail-send'></i>
+              <label>farmaplus.mx@fama</label>
+            </div>
+            <div class="redes">
+              <i class='bx bxl-instagram' ></i>
+              <label>@farmaplus</label>
+            </div>
+            <div class="redes">
+              <i class='bx bxl-whatsapp' ></i>
+              <label >+(52)78547854</label>
+            </div>
+            <div class="redes">
+              <img src="assets/img/payment-item.png" class="pago">
+            </div>
+          </div>
+          <div class="segu-columna">
+              <h1>Atención a Clientes</h1>
+              <div class="atencion">
+                <a href="#">Contáctanos</a>
+              </div>
+              <div class="atencion">
+                <a href="#">Localizador de Farmacias</a>
+              </div>
+              <div class="atencion">
+                <a href="#">Facturación</a>
+              </div>
+          </div>
+          <div class="tercer-columna">
+            <h1>Políticas</h1>
+            <div class="politicas">
+              <a href="#">Aviso de Privacidad</a>
+            </div>
+            <div class="politicas">
+                <a href="#">Preguntas Frecuentes</a>
+            </div>
+            <div class="politicas">
+                <a href="#">Términos y condiciones</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contenedor-footer">
+        <div class="footer">
+          <div class="copyright">
+            ©<a href="#"> Farma Plus | </a> Todos los derechos reservados 2021
+          </div>
+          <div class="information-footer">
+            <a href="#">Atención a Clientes </a>|
+            <a href="#">Privacidad y Politica </a>| 
+            <a href="#">Terminos y condiciones </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

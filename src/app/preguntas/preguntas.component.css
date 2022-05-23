@@ -1,0 +1,256 @@
+body{
+    min-height: 100vh;
+    background: rgb(240, 239, 239);
+}
+
+.container{
+    min-height: 100vh; 
+    /*background: #039be5;*/
+    justify-content: center;
+    padding-top: 6%;
+}
+
+.menu{
+    background: rgb(129,189,203);
+    background: linear-gradient(90deg, rgba(129,189,203,1) 8%, rgba(38,98,111,0.7819502801120448) 50%, rgba(129,189,203,1) 99%);
+    width: 100%;
+    height: 80px;
+    padding-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logoFarma{
+    float: left;
+    width: 220px;
+    height: 55px;
+    margin-top: 5px;
+    margin-left: 15%;
+}
+
+
+.menu-category{
+
+    width: 800px;
+    height: 65px;
+	background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*box-sizing: border-box;*/
+    /*position: fixed;*/
+    top: 0px;
+    margin-left:33%;
+    margin-top: 5px;
+    /*z-index: 1;*/
+    padding-top: 13px;
+    /*filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));*/
+}
+/**********************/
+.menu-category ul{
+    padding: 0;
+    margin: 0;
+	color: #fff;
+	
+  }
+  
+.menu-category ul li{
+    
+    position: relative;
+    list-style: none;
+    display: inline-block;
+    margin-top: -10px;
+	text-decoration: none;
+	/*z-index: 1;*/
+	background: transparent;
+    
+  }
+  
+.menu-category ul li a{
+    display: block;
+    padding: 0 15px;
+    color: #fff;
+	font-weight: bolder;
+    text-decoration: none;
+    line-height: 60px;
+    font-size: 14px;
+	z-index: 1;
+    
+  }
+  
+.menu-category ul li a:hover{
+    background: #0998f759;
+  }
+  
+.menu-category ul ul{
+    position: absolute;
+    top: 60px;
+    display: none;
+	z-index: 1;
+  }
+  
+  
+.menu-category ul li:hover > ul{
+    display: block;
+  }
+  
+.menu-category ul ul li{
+    width: 150px;
+    float: none;
+    display: list-item;
+    position: relative;
+    background: #002080;
+    
+  }
+  
+.menu-category ul ul ul li{
+    position: relative;
+    top: -40px;
+    left: 150px;
+    width: 200px;
+    background: rgb(129,189,203);
+    
+  }
+  
+.menu-category ul ul ul li a{
+    font-size: 15px;
+    color: #fff;
+  }
+
+.menu-category ul ul li a{
+    
+    color: #fff;
+  }
+
+/*------------Iconos de usuarios*/
+
+.navbar_user
+{
+    width: 180px;
+	margin-right:15%;
+   /*background-color: #db0e97;*/
+	float: right;
+    margin-top: -60px;
+	
+}
+.navbar_user li
+{
+	display: inline-block;
+	text-align: center;
+    padding-left: 10px;
+}
+.navbar_user li a
+{
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	width: 40px;
+	height: 40px;
+	color: #1e1e27;
+	-webkit-transition: color 0.3s ease;
+	-moz-transition: color 0.3s ease;
+	-ms-transition: color 0.3s ease;
+	-o-transition: color 0.3s ease;
+	transition: color 0.3s ease;
+    text-decoration: none;
+}
+.navbar_user li a:hover
+{
+	color: #80ac42;
+}
+.checkout a
+{
+	background: #eceff6;
+	border-radius: 50%;
+}
+.checkout_items
+{
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: -9px;
+	left: 22px;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background: #fe4c50;
+	font-size: 12px;
+	color: #FFFFFF;
+}
+
+
+.card-header:not([class*=bg-]):not([class*=alpha-]) {
+    background-color: transparent;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    border-bottom-width: 0
+}
+
+.card-header .card-title {
+    margin-bottom: 0
+}
+
+.card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: .1875rem
+}
+
+@media screen and (max-width:1400px) {
+    .logoFarma{
+        float: left;
+        width: 220px;
+        height: 55px;
+        margin-top: 5px;
+        margin-left: 5%;
+    }
+    
+    
+    .menu-category{
+    
+        width: 800px;
+        height: 65px;
+        background: transparent;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /*box-sizing: border-box;*/
+        /*position: fixed;*/
+        top: 0px;
+        margin-left:310px;
+        margin-top: 5px;
+        /*z-index: 1;*/
+        padding-top: 13px;
+        /*filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));*/
+    }
+
+    .navbar_user
+    {
+        width: 180px;
+        margin-right:5%;
+    /*background-color: #db0e97;*/
+        float: right;
+        margin-top: -60px;
+        
+    }
+}
