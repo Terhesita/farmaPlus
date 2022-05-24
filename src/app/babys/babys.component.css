@@ -677,5 +677,39 @@ footer{
 }
 
 .n-fav{
-    color: #b4b4b4;
+    color: #fff;
+}
+
+.btn-fav{
+    background: #09a5d6;
+}
+
+.btn-car{
+    background: #09a5d6;
+    color: #fff;
+}
+
+@media screen and (max-width:320px) {
+    .btn-fav{
+        margin-top:2%
+    }
+}
+
+@media screen and (max-width:375px) {
+    .btn-fav{
+        margin-top:2%
+    }
+}
+
+@media screen and (max-width:425px) {
+    .btn-fav{
+        margin-top:2%
+    }
+}
+
+@media screen and (max-width:768px) {
+    .btn-fav{
+        margin-top:2%;
+        margin-left:0%;
+    }
 }
